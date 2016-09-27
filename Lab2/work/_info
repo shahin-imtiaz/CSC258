@@ -9,22 +9,42 @@ z2
 cModel Technology
 Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab2
 vmux2to1
-!s110 1475008051
+Z1 !s110 1475010198
 !i10b 1
 !s100 _JOJeaeMMc?V6cBYJgkE:2
-IT4J^Ji3JF1L9Le4m4OEGj0
-VDg1SIo80bB@j0V0VzS_@n1
+I:cn:i>@Y6g77L_C6^f60k2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1474943307
-8mux.v
-Fmux.v
+Z3 w1475009831
+Z4 8mux4to1.v
+Z5 Fmux4to1.v
 L0 1
-OV;L;10.4d;61
+Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-!s108 1475008051.000000
-!s107 mux.v|
-!s90 -reportprogress|300|-timescale|1ns/1ns|mux.v|
+Z7 !s108 1475010198.000000
+Z8 !s107 mux4to1.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|mux4to1.v|
 !i113 1
-o-timescale 1ns/1ns
+Z10 o-timescale 1ns/1ns
+vmux4to1
+R1
+!i10b 1
+!s100 G`MChc8`KPNNhWZCfFBdd1
+IfcC;>mla__;?i2SDPO`TL2
+R2
+R0
+R3
+R4
+R5
+L0 10
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

@@ -31,7 +31,7 @@ module mux4to1(SW, LEDR);
 	mux2to1 mux2(
 		.x(connector_1), // connected to output of mux0
 		.y(connector_2), // connected to output of mux1
-		.s(sw[8]), // SW[8] stands for s_1
+		.s(SW[8]), // SW[8] stands for s_1
 		.m(LEDR[0])
 	);
 endmodule

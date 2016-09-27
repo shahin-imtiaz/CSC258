@@ -1,12 +1,12 @@
 # Set the working dir, where all compiled Verilog goes.
-vlib work
+vlib mux4to1
 
 # Compile all Verilog modules in mux.v to working dir;
 # could also have multiple Verilog files.
 # The timescale argument defines default time unit
 # (used when no unit is specified), while the second number
 # defines precision (all times are rounded to this value)
-vlog -timescale 1ns/1ns mux.v
+vlog -timescale 1ns/1ns mux4to1.v
 
 # Load simulation using mux as the top level simulation module.
 vsim mux4to1
