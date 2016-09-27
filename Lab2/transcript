@@ -114,3 +114,115 @@ do wave.do
 # Start time: 17:08:31 on Sep 27,2016
 # Loading work.mux
 # Loading work.mux2to1
+do wave.do
+# Cannot open macro file: wave.do
+pwd
+# /h/u5/c5/04/kongxi16/CSC258/Lab2
+cd part_I
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+quit -sim
+# End time: 17:45:26 on Sep 27,2016, Elapsed time: 0:36:55
+# Errors: 2, Warnings: 0
+cd part_I
+ls
+# mux.v
+# wave.do
+do wave.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:45:38 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns mux.v 
+# -- Compiling module mux
+# -- Compiling module mux2to1
+# 
+# Top level modules:
+# 	mux
+# End time: 17:45:38 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim mux 
+# Start time: 17:45:38 on Sep 27,2016
+# Loading work.mux
+# Loading work.mux2to1
+quit
+quit -sim
+# End time: 17:45:53 on Sep 27,2016, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0
+ls
+# mux.v
+# vsim.wlf
+# wave.do
+# work
+cd ..
+cd part_II
+do wave4to1.do
+# ** Warning: (vlib-34) Library already exists at "mux4to1".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:46:03 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns mux4to1.v 
+# ** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+# End time: 17:46:03 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./wave4to1.do line 9
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns mux4to1.v"
+ls
+# mux4to1
+# mux4to1.v
+# mux4to1.v.bak
+# wave4to1.do
+# wave4to1.do.bak
+do wave4to1.do
+# ** Warning: (vlib-34) Library already exists at "mux4to1".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:47:24 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns mux4to1.v 
+# ** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+# End time: 17:47:24 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./wave4to1.do line 9
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns mux4to1.v"
+do wave4to1.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:47:52 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns mux4to1.v 
+# ** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+# End time: 17:47:52 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./wave4to1.do line 9
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns mux4to1.v"
+do wave4to1.do
+# ** Warning: (vlib-34) Library already exists at "mux4to1".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:50:01 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns mux4to1.v 
+# ** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+# End time: 17:50:01 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./wave4to1.do line 9
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns mux4to1.v"
+do wave4to1.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:52:51 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns mux4to1.v 
+# -- Compiling module mux2to1
+# -- Compiling module mux4to1
+# 
+# Top level modules:
+# 	mux4to1
+# End time: 17:52:51 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim mux4to1 
+# Start time: 17:52:52 on Sep 27,2016
+# Loading work.mux4to1
+# Loading work.mux2to1
