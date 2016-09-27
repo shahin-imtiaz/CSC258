@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab2
+vmux2to1
+!s110 1475008051
+!i10b 1
+!s100 _JOJeaeMMc?V6cBYJgkE:2
+IT4J^Ji3JF1L9Le4m4OEGj0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1474943307
+8mux.v
+Fmux.v
+L0 1
+OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1475008051.000000
+!s107 mux.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|mux.v|
+!i113 1
+o-timescale 1ns/1ns
