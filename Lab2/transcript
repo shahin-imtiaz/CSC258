@@ -226,3 +226,13 @@ do wave4to1.do
 # Start time: 17:52:52 on Sep 27,2016
 # Loading work.mux4to1
 # Loading work.mux2to1
+quit -sim
+# End time: 17:57:38 on Sep 27,2016, Elapsed time: 0:04:46
+# Errors: 0, Warnings: 0
+ls
+# mux4to1.v
+# mux4to1.v.bak
+# vsim.wlf
+# wave4to1.do
+# wave4to1.do.bak
+# work
