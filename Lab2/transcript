@@ -97,3 +97,20 @@ do wave4to1.do
 # Start time: 17:03:18 on Sep 27,2016
 # Loading work.mux4to1
 # Loading work.mux2to1
+do wave.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:08:30 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns mux.v 
+# -- Compiling module mux
+# -- Compiling module mux2to1
+# 
+# Top level modules:
+# 	mux
+# End time: 17:08:31 on Sep 27,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:08:31 on Sep 27,2016, Elapsed time: 0:05:13
+# Errors: 0, Warnings: 0
+# vsim mux 
+# Start time: 17:08:31 on Sep 27,2016
+# Loading work.mux
+# Loading work.mux2to1
