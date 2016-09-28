@@ -1,0 +1,234 @@
+# OpenFile hex_display.do
+do hex_display.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:23:16 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# ** Error: (vlog-13069) hex_display.v(6): near ";": syntax error, unexpected ';', expecting ')'.
+# ** Error: (vlog-13069) hex_display.v(14): near ";": syntax error, unexpected ';', expecting ')'.
+# ** Error: (vlog-13069) hex_display.v(22): near ";": syntax error, unexpected ';', expecting ')'.
+# ** Error: (vlog-13069) hex_display.v(30): near ";": syntax error, unexpected ';', expecting ')'.
+# ** Error: (vlog-13069) hex_display.v(38): near ";": syntax error, unexpected ';', expecting ')'.
+# ** Error: (vlog-13069) hex_display.v(46): near ";": syntax error, unexpected ';', expecting ')'.
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# End time: 20:23:16 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./hex_display.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns hex_display.v"
+do hex_display.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:24:33 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# 
+# Top level modules:
+# 	hex_display
+# 	zeroth
+# End time: 20:24:33 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim hex_display 
+# Start time: 20:24:34 on Sep 27,2016
+# Loading work.hex_display
+# Loading work.first
+# Loading work.second
+# Loading work.third
+# Loading work.fourth
+# Loading work.fifth
+# Loading work.sixth
+do hex_display.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:28:56 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# 
+# Top level modules:
+# 	hex_display
+# 	zeroth
+# End time: 20:28:56 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:28:56 on Sep 27,2016, Elapsed time: 0:04:22
+# Errors: 0, Warnings: 0
+# vsim hex_display 
+# Start time: 20:28:56 on Sep 27,2016
+# Loading work.hex_display
+# Loading work.first
+# Loading work.second
+# Loading work.third
+# Loading work.fourth
+# Loading work.fifth
+# Loading work.sixth
+do hex_display.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:33:36 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# 
+# Top level modules:
+# 	hex_display
+# End time: 20:33:36 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:33:36 on Sep 27,2016, Elapsed time: 0:04:40
+# Errors: 0, Warnings: 0
+# vsim hex_display 
+# Start time: 20:33:36 on Sep 27,2016
+# Loading work.hex_display
+# Loading work.zeroth
+# Loading work.first
+# Loading work.second
+# Loading work.third
+# Loading work.fourth
+# Loading work.fifth
+# Loading work.sixth
+do hex_display.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:55:52 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# 
+# Top level modules:
+# 	hex_display
+# End time: 20:55:52 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:55:52 on Sep 27,2016, Elapsed time: 0:22:16
+# Errors: 0, Warnings: 0
+# vsim hex_display 
+# Start time: 20:55:52 on Sep 27,2016
+# Loading work.hex_display
+# Loading work.zeroth
+# Loading work.first
+# Loading work.second
+# Loading work.third
+# Loading work.fourth
+# Loading work.fifth
+# Loading work.sixth
+do hex_display.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:13:55 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# 
+# Top level modules:
+# 	hex_display
+# End time: 21:13:55 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:13:55 on Sep 27,2016, Elapsed time: 0:18:03
+# Errors: 0, Warnings: 0
+# vsim hex_display 
+# Start time: 21:13:55 on Sep 27,2016
+# Loading work.hex_display
+# Loading work.zeroth
+# Loading work.first
+# Loading work.second
+# Loading work.third
+# Loading work.fourth
+# Loading work.fifth
+# Loading work.sixth
+do hex_display.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:22:16 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# 
+# Top level modules:
+# 	hex_display
+# End time: 21:22:16 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:22:29 on Sep 27,2016, Elapsed time: 0:08:34
+# Errors: 0, Warnings: 0
+# vsim hex_display 
+# Start time: 21:22:29 on Sep 27,2016
+# Loading work.hex_display
+# Loading work.zeroth
+# Loading work.first
+# Loading work.second
+# Loading work.third
+# Loading work.fourth
+# Loading work.fifth
+# Loading work.sixth
+do hex_display.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:24:47 on Sep 27,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns hex_display.v 
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# 
+# Top level modules:
+# 	hex_display
+# End time: 21:24:47 on Sep 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:24:47 on Sep 27,2016, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 0
+# vsim hex_display 
+# Start time: 21:24:47 on Sep 27,2016
+# Loading work.hex_display
+# Loading work.zeroth
+# Loading work.first
+# Loading work.second
+# Loading work.third
+# Loading work.fourth
+# Loading work.fifth
+# Loading work.sixth
