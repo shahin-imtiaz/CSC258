@@ -67,7 +67,8 @@ module zeroth(a, b, c, d, m);
 	input d;
 	output m;
 	
-	assign m = ~((a & ~d) | (~b & ~d) | (~a & c) | (a & ~b & ~c) | (~a & b & d) | (b & c & d));
+	//assign m = ~((a & ~d) | (~b & ~d) | (~a & c) | (a & ~b & ~c) | (~a & b & d) | (b & c & d));
+	assign m = (~a & b & ~c & ~d) | (a & b & ~c & d) | (a & ~b & c & d);
 endmodule
 
 
@@ -78,7 +79,8 @@ module first(a, b, c, d, m);
 	input d;
 	output m;
 	
-	assign m = ~((~b & ~c) | (~b & ~d) | (~a & ~c & ~d) | (a & ~c & d) | (~a & c & d));
+	// assign m = ~((~b & ~c) | (~b & ~d) | (~a & ~c & ~d) | (a & ~c & d) | (~a & c & d));
+	assign m = (b & c & ~d) | (a & b & ~d) | (a & c & d) | (~a & b & ~c & d); 
 endmodule
 
 
@@ -89,7 +91,8 @@ module second(a, b, c, d, m);
 	input d;
 	output m;
 	
-	assign m = ~((~a & ~c) | (~a & d) | (~b & ~c) | (~b & d) | (a & ~c & d) | (~a & b & c) | (a & ~b & c));
+	//assign m = ~((~a & ~c) | (~a & d) | (~b & ~c) | (~b & d) | (a & ~c & d) | (~a & b & c) | (a & ~b & c));
+	assign m = (a & b & c) | (a & b & ~d) | (~a & ~b & ~c & d) | (~a & ~b & c & ~d);
 endmodule
 
 
@@ -100,7 +103,8 @@ module third(a, b, c, d, m);
 	input d;
 	output m;
 	
-	assign m = ~((a & ~c) | (~a & ~b & ~d) | (b & ~c & d) | (~b & c & d) | (b & c & ~d));
+	// assign m = ~((a & ~c) | (~a & ~b & ~d) | (b & ~c & d) | (~b & c & d) | (b & c & ~d));
+	assign m = (b & c & d) | (~a & ~b & ~c & d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d);
 endmodule
 
 
@@ -111,7 +115,8 @@ module fourth(a, b, c, d, m);
 	input d;
 	output m;
 	
-	assign m = ~((a & c) | (a & ~d) | (~a & ~b & ~d) | (~a & c & ~d) | (a & b & d));
+	// assign m = ~((a & c) | (a & ~d) | (~a & ~b & ~d) | (~a & c & ~d) | (a & b & d));
+	assign m = (a & d) | (~a & b & ~c) | (~b & ~c & d);
 endmodule
 
 
@@ -122,7 +127,8 @@ module fifth(a, b, c, d, m);
 	input d;
 	output m;
 	
-	assign m = ~((a & c) | (a & ~d) | (~a & ~c & ~d) | (~a & b & ~d) | (~a & b & c) | (a & ~b & d));
+	// assign m = ~((a & c) | (a & ~d) | (~a & ~c & ~d) | (~a & b & ~d) | (~a & b & c) | (a & ~b & d));
+	assign m = (~a & ~b & c) | (~a & ~b & c) | (a & c & d) | (a & b & ~c & d);
 endmodule
 
 
@@ -133,5 +139,6 @@ module sixth(a, b, c, d, m);
 	input d;
 	output m;
 	
-	assign m = ~((a & c) | (a & d) | (~b & c) | (~a & b & ~c) | (a & ~b & ~c) | (~a & c & ~d));
+	// assign m = ~((a & c) | (a & d) | (~b & c) | (~a & b & ~c) | (a & ~b & ~c) | (~a & c & ~d));
+	assign (~a & ~b & ~c) | (~a & b & c & d) | (a & b & ~c & ~d);
 endmodule
