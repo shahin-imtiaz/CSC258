@@ -56,3 +56,4 @@ module mux7to1(SW, LEDR);
 		.s(SW[9]),
 		.m(LEDR[0])
 	);
+endmodule
