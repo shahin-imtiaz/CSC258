@@ -7,7 +7,7 @@ endmodule
 
 module mux7to1(SW, LEDR);
 	input [9:0] SW;
-	output [9:0] LEDR;
+	output [1:0]LEDR;
 	
 	wire connector_0;
 	wire connector_1;

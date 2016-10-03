@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab3/partI
+vmux2to1
+Z1 !s110 1475528306
+!i10b 1
+!s100 dH4[hGG=HDD6`9BA_DUM_3
+IQ2^Si<MM?zLY>AQj0JdjZ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1475528302
+Z4 8mux7to1.v
+Z5 Fmux7to1.v
+L0 1
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1475528306.000000
+Z8 !s107 mux7to1.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|mux7to1.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+vmux7to1
+R1
+!i10b 1
+!s100 =R]<C[4HoONZZU[bJ`G9F0
+Ic^3Pf4TTMW1dm6SNVYU_=1
+R2
+R0
+R3
+R4
+R5
+L0 8
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
