@@ -1,1 +1,754 @@
 # OpenFile alu.do
+cd ../../tryingshitout
+do try.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:54:13 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 16:54:14 on Oct 04,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:54:14 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:54:39 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 16:54:39 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:54:39 on Oct 04,2016, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:54:39 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:54:50 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 16:54:50 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:54:51 on Oct 04,2016, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:54:51 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:56:58 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 16:56:58 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:56:59 on Oct 04,2016, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:56:59 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:57:41 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 16:57:41 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:57:41 on Oct 04,2016, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:57:41 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:59:20 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 16:59:20 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:59:20 on Oct 04,2016, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:59:20 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:16:08 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 17:16:08 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:16:08 on Oct 04,2016, Elapsed time: 0:16:48
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 17:16:08 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:16:31 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 17:16:31 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:16:31 on Oct 04,2016, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 17:16:31 on Oct 04,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:23:21 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# -- Compiling module hex_display
+# -- Compiling module zeroth
+# -- Compiling module first
+# -- Compiling module second
+# -- Compiling module third
+# -- Compiling module fourth
+# -- Compiling module fifth
+# -- Compiling module sixth
+# ** Error: (vlog-13069) try.v(219): near "~": syntax error, unexpected '~'.
+# End time: 17:23:21 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./try.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns try.v"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:35:08 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 17:35:08 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:35:08 on Oct 04,2016, Elapsed time: 0:18:37
+# Errors: 4, Warnings: 0
+# vsim try 
+# Start time: 17:35:08 on Oct 04,2016
+# Loading work.try
+cd ../Lab3/partIII
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+cd ../Lab3/partIII
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+quit -sim
+# End time: 17:42:27 on Oct 04,2016, Elapsed time: 0:07:19
+# Errors: 2, Warnings: 0
+cd ../Lab3/partIII
+do alu.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:42:37 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error: (vlog-13069) alu.v(12): near "[": syntax error, unexpected '[', expecting ')'.
+# ** Error: (vlog-13069) alu.v(28): near "endcase": syntax error, unexpected endcase, expecting ';'.
+# End time: 17:42:37 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:42:59 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error: alu.v(27): (vlog-2730) Undefined variable: 'm'.
+# ** Error: (vlog-13069) alu.v(28): near "endcase": syntax error, unexpected endcase, expecting ';'.
+# End time: 17:42:59 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:43:20 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error: (vlog-13069) alu.v(28): near "endcase": syntax error, unexpected endcase, expecting ';'.
+# End time: 17:43:20 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:43:35 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error: alu.v(1): (vlog-2730) Undefined variable: 'HEX0'.
+# ** Error: alu.v(1): Identifier must be declared with a port mode: HEX0.
+# ** Error: alu.v(1): (vlog-2730) Undefined variable: 'HEX1'.
+# ** Error: alu.v(1): Identifier must be declared with a port mode: HEX1.
+# ** Error: alu.v(1): (vlog-2730) Undefined variable: 'HEX2'.
+# ** Error: alu.v(1): Identifier must be declared with a port mode: HEX2.
+# ** Error: alu.v(1): (vlog-2730) Undefined variable: 'HEX3'.
+# ** Error: alu.v(1): Identifier must be declared with a port mode: HEX3.
+# ** Error: alu.v(1): (vlog-2730) Undefined variable: 'HEX4'.
+# ** Error: alu.v(1): Identifier must be declared with a port mode: HEX4.
+# ** Error: alu.v(1): (vlog-2730) Undefined variable: 'HEX5'.
+# ** Error: alu.v(1): Identifier must be declared with a port mode: HEX5.
+# ** Error: (vlog-13069) alu.v(113): near "endmodule": syntax error, unexpected endmodule, expecting class.
+# End time: 17:43:35 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 13, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:43:49 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error: (vlog-13069) alu.v(113): near "endmodule": syntax error, unexpected endmodule, expecting class.
+# End time: 17:43:49 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:44:26 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:44:26 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:44:26 on Oct 04,2016
+# Loading work.alu
+# ** Error: evaluating expression "SW[9: 0]"
+#  Slice range [9:0] is outside the prefix index range [7:0].
+# Error in macro ./alu.do line 27
+# evaluating expression "SW[9: 0]"
+#  Slice range [9:0] is outside the prefix index range [7:0].
+# 
+#     while executing
+# "force {SW[9: 0]} 2#1010101010"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:45:13 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:45:13 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:45:14 on Oct 04,2016, Elapsed time: 0:00:48
+# Errors: 2, Warnings: 0
+# vsim alu 
+# Start time: 17:45:14 on Oct 04,2016
+# Loading work.alu
+# ** Error: evaluating expression "SW[9: 0]"
+#  Slice range [9:0] is outside the prefix index range [7:0].
+# Error in macro ./alu.do line 27
+# evaluating expression "SW[9: 0]"
+#  Slice range [9:0] is outside the prefix index range [7:0].
+# 
+#     while executing
+# "force {SW[9: 0]} 2#1010101010"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:45:36 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:45:36 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:45:37 on Oct 04,2016, Elapsed time: 0:00:23
+# Errors: 2, Warnings: 0
+# vsim alu 
+# Start time: 17:45:37 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:49:03 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:49:03 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:49:03 on Oct 04,2016, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:49:03 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:49:48 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:49:48 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:49:48 on Oct 04,2016, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:49:48 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:50:40 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:50:40 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:50:41 on Oct 04,2016, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:50:41 on Oct 04,2016
+# Loading work.alu
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+# Error in macro ./alu.do line 15
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+#     while executing
+# "force {KEY[2: 0]} 2#000 0, 2#001 10, 2#010 20, 2#011 30, 2#100 40, 2#101 50, -r 60"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:51:36 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:51:36 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:51:36 on Oct 04,2016, Elapsed time: 0:00:55
+# Errors: 2, Warnings: 0
+# vsim alu 
+# Start time: 17:51:36 on Oct 04,2016
+# Loading work.alu
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+# Error in macro ./alu.do line 15
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+#     while executing
+# "force {KEY[2: 0]} 2#000 0, 2#001 10, 2#010 20, 2#011 30, 2#100 40, 2#101 50, -r 60ns"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:51:53 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:51:53 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:51:54 on Oct 04,2016, Elapsed time: 0:00:18
+# Errors: 2, Warnings: 0
+# vsim alu 
+# Start time: 17:51:54 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:52:36 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:52:36 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:52:37 on Oct 04,2016, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:52:37 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:53:11 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:53:11 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:53:12 on Oct 04,2016, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:53:12 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:54:28 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:54:28 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:54:28 on Oct 04,2016, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:54:28 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:55:26 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:55:26 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:55:26 on Oct 04,2016, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:55:26 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:58:08 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:58:08 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:58:09 on Oct 04,2016, Elapsed time: 0:02:43
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 17:58:09 on Oct 04,2016
+# Loading work.alu
+# ** Error: Invalid binary digit: S.
+# ** Error: (vsim-4011) Invalid force value: 2#00000S000.
+# Error in macro ./alu.do line 12
+# Invalid binary digit: S.
+# ** Error: (vsim-4011) Invalid force value: 2#00000S000.
+# 
+#     while executing
+# "force {SW[7: 0]} 2#00000S000"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:58:21 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:58:21 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:58:21 on Oct 04,2016, Elapsed time: 0:00:12
+# Errors: 2, Warnings: 0
+# vsim alu 
+# Start time: 17:58:21 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:03:20 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:03:20 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:03:21 on Oct 04,2016, Elapsed time: 0:05:00
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 18:03:21 on Oct 04,2016
+# Loading work.alu
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:38:47 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): alu.v(13): (vlog-2388) 'w1' already declared in this scope (alu).
+# ** Error: (vlog-13069) alu.v(13): near "function5": syntax error, unexpected IDENTIFIER, expecting ';'.
+# -- Compiling module function5
+# ** Error: alu.v(72): (vlog-2730) Undefined variable: 'b'.
+# ** Warning: alu.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(74): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(75): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(76): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(77): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(78): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(79): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(80): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(81): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(82): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(83): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(84): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(85): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(86): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(88): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# End time: 18:38:48 on Oct 04,2016, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 16
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:39:06 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): alu.v(9): (vlog-2388) 'w1' already declared in this scope (alu).
+# ** Error: (vlog-13069) alu.v(18): near "function5": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
+# -- Compiling module function5
+# ** Warning: alu.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(74): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(75): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(76): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(77): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(78): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(79): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(80): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(81): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(82): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(83): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(84): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(85): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(86): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(88): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# End time: 18:39:07 on Oct 04,2016, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 16
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:39:22 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): alu.v(9): (vlog-2388) 'w1' already declared in this scope (alu).
+# -- Compiling module function5
+# ** Error: alu.v(72): (vlog-2730) Undefined variable: 'b'.
+# ** Warning: alu.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(74): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(75): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(76): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(77): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(78): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(79): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(80): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(81): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(82): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(83): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(84): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(85): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(86): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(88): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# End time: 18:39:22 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 16
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:39:51 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): alu.v(9): (vlog-2388) 'w1' already declared in this scope (alu).
+# -- Compiling module function5
+# ** Warning: alu.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(74): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(75): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(76): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(77): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(78): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(79): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(80): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(81): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(82): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(83): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(84): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(85): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(86): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(88): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# End time: 18:39:52 on Oct 04,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 16
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:40:35 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): alu.v(9): (vlog-2388) 'w1' already declared in this scope (alu).
+# -- Compiling module function5
+# ** Warning: alu.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(74): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(75): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(76): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(77): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(78): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(79): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(80): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(81): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(82): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(83): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(84): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(85): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(86): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(87): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: alu.v(88): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# End time: 18:40:35 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 16
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:41:43 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# ** Error (suppressible): alu.v(9): (vlog-2388) 'w1' already declared in this scope (alu).
+# -- Compiling module function5
+# End time: 18:41:43 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./alu.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns alu.v"
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:42:05 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# 
+# Top level modules:
+# 	alu
+# End time: 18:42:05 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:42:06 on Oct 04,2016, Elapsed time: 0:38:45
+# Errors: 22, Warnings: 80
+# vsim alu 
+# Start time: 18:42:06 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
+# ** Error: (vsim-3063) alu.v(13): Port 'm' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/a File: alu.v
+# ** Error: (vsim-3063) alu.v(18): Port 'm' not found in the connected module (2nd connection).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/b File: alu.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./alu.do PAUSED at line 5
+cd ../Lab3/partIII
+# couldn't change working directory to "../Lab3/partIII": no such file or directory
+do alu.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:43:05 on Oct 04,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns alu.v 
+# -- Compiling module alu
+# -- Compiling module function5
+# 
+# Top level modules:
+# 	alu
+# End time: 18:43:05 on Oct 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim alu 
+# Start time: 18:42:06 on Oct 04,2016
+# Loading work.alu
+# Loading work.function5
