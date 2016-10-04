@@ -49,16 +49,3 @@ force {SW[1]} 0
 force {SW[0]} 1
 
 run 10ns
-
-# a = 10(1010); b = 5 (0101);
-# output = 15 (01111)
-force {SW[7]} 0
-force {SW[6]} 1
-force {SW[5]} 0
-force {SW[4]} 1
-force {SW[3]} 1
-force {SW[2]} 0
-force {SW[1]} 1
-force {SW[0]} 0
-
-run 10ns

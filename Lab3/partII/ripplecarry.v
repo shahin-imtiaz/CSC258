@@ -4,46 +4,47 @@ module fulladder(a, b, cin, cout, s);
 	input cin;
 	output cout;
 	output s;
-	reg cout
 	
-	assign s = cin ^ a;
-	always @(*)
-	begin
-		case[a ^ b]
-			1'b0: cout = b;
-			1'b1: cout = cin;
-		endcase
-	end
+	assign s = cin ^ (a ^ b);
+	assign cout = ((a ^ b) & cin) | (~(a ^ b) & b);
 endmodule
 
 
 module ripplecarry(SW, LEDR);
 	input [9:0] SW;
-	output [4:0] LEDR;
+	output [9:0] LEDR;
 	
-	wire c0, c1, c2, c3, c4, c5;
+	wire c0, c1, c2;
 	
 	fulladder fa0(
-		.a(SW[1]),
-		.b(SW[5]),
-		.cin(SW[0]),
+		.a(SW[7]),
+		.b(SW[3]),
+		.cin(SW[8]),
 		.cout(c0),
-		.s(LEDR[0])
+		.s(LEDR[3])
 	);
 	
 	fulladder fa1(
-		.a(SW[2]),
-		.b(SW[5]),
+		.a(SW[6]),
+		.b(SW[2]),
 		.cin(c0),
 		.cout(c1),
-		.s(LEDR[1])
+		.s(LEDR[2])
 	);
 	
 	fulladder fa2(
-		.a(SW[3]),
-		.b(SW[6]),
+		.a(SW[5]),
+		.b(SW[1]),
 		.cin(c1),
 		.cout(c2),
-		.s(LEDR[2])
+		.s(LEDR[1])
+	);
+	
+	fulladder fa3(
+		.a(SW[4]),
+		.b(SW[0]),
+		.cin(c2),
+		.cout(LEDR[9]),
+		.s(LEDR[0])
 	);
 endmodule

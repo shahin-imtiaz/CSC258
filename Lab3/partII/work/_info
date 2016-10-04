@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab3/partII
+vfulladder
+Z1 !s110 1475541235
+!i10b 1
+!s100 ne4CC6mV]T843glIlAI_^2
+I3]V`IHFE^a2W;F?2XL:;z3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1475538825
+Z4 8ripplecarry.v
+Z5 Fripplecarry.v
+L0 1
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1475541235.000000
+Z8 !s107 ripplecarry.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|ripplecarry.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+vripplecarry
+R1
+!i10b 1
+!s100 Pn^]@fJ1G2XhNhECG[1<J0
+IzkLo8kZE9]Ykif@?g>F7h1
+R2
+R0
+R3
+R4
+R5
+L0 13
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

@@ -1,71 +1,291 @@
 # OpenFile ripplecarry.do
-ls
-# ripplecarry.do
-# ripplecarry.v
-# ripplecarry.v.bak
-# transcript
-cd ../partI
-do mux7to1.do
-# ** Warning: (vlib-34) Library already exists at "work".
+do ripplecarry.do
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:58:07 on Oct 03,2016
+# Start time: 19:37:11 on Oct 03,2016
 # vlog -reportprogress 300 -timescale 1ns/1ns mux7to1.v 
-# -- Compiling module mux2to1
-# -- Compiling module mux7to1
-# ** Error: mux7to1.v(11): Single value range only allowed in SystemVerilog.
-# ** Error: mux7to1.v(11): 'Port' must not be declared to be an array: LEDR.
-# ** Error: (vlog-13069) mux7to1.v(70): near ")": syntax error, unexpected ')'.
-# End time: 17:58:07 on Oct 03,2016, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./mux7to1.do line 3
-# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -timescale 1ns/1ns mux7to1.v"
-do mux7to1.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:01:03 on Oct 03,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns mux7to1.v 
-# -- Compiling module mux2to1
-# -- Compiling module mux7to1
-# ** Error: (vlog-13069) mux7to1.v(71): near ")": syntax error, unexpected ')'.
-# End time: 18:01:03 on Oct 03,2016, Elapsed time: 0:00:00
+# ** Error: (vlog-7) Failed to open design unit file "mux7to1.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 19:37:11 on Oct 03,2016, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./mux7to1.do line 3
+# Error in macro ./ripplecarry.do line 3
 # /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
 #     while executing
 # "vlog -timescale 1ns/1ns mux7to1.v"
-do mux7to1.do
+do ripplecarry.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:05:34 on Oct 03,2016
+# Start time: 19:40:33 on Oct 03,2016
 # vlog -reportprogress 300 -timescale 1ns/1ns mux7to1.v 
-# -- Compiling module mux2to1
-# -- Compiling module mux7to1
-# 
-# Top level modules:
-# 	mux2to1
-# 	mux7to1
-# End time: 18:05:34 on Oct 03,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim mux7to1 
-# Start time: 18:05:34 on Oct 03,2016
-# Loading work.mux7to1
-do mux7to1.do
+# ** Error: (vlog-7) Failed to open design unit file "mux7to1.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 19:40:33 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ripplecarry.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns mux7to1.v"
+do ripplecarry.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:06:54 on Oct 03,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns mux7to1.v 
-# -- Compiling module mux7to1
+# Start time: 19:42:24 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# ** Error: (vlog-13069) ripplecarry.v(9): near "assign": syntax error, unexpected assign, expecting ';' or ','.
+# ** Error: (vlog-13069) ripplecarry.v(11): near "endmodule": syntax error, unexpected endmodule, expecting ';' or ','.
+# End time: 19:42:24 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ripplecarry.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns ripplecarry.v"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:42:36 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# ** Error: (vlog-13069) ripplecarry.v(9): near "assign": syntax error, unexpected assign, expecting ';' or ','.
+# -- Compiling module ripplecarry
+# End time: 19:42:36 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ripplecarry.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns ripplecarry.v"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:43:00 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# ** Error: ripplecarry.v(10): Register is illegal in left-hand side of continuous assignment
+# -- Compiling module ripplecarry
+# End time: 19:43:00 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ripplecarry.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns ripplecarry.v"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:43:33 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# ** Error: ripplecarry.v(10): Register is illegal in left-hand side of continuous assignment
+# -- Compiling module ripplecarry
+# End time: 19:43:33 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./ripplecarry.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns ripplecarry.v"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:43:53 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
 # 
 # Top level modules:
-# 	mux7to1
-# End time: 18:06:54 on Oct 03,2016, Elapsed time: 0:00:00
+# 	ripplecarry
+# End time: 19:43:53 on Oct 03,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 18:06:55 on Oct 03,2016, Elapsed time: 0:01:21
+# vsim ripplecarry 
+# Start time: 19:43:53 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+# ** Error: invalid command name "1"
+# Error in macro ./ripplecarry.do line 16
+# invalid command name "1"
+#     while executing
+# "1"
+#     invoked from within
+# "force{SW[1]} 0"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:45:04 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 19:45:05 on Oct 03,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim mux7to1 
-# Start time: 18:06:55 on Oct 03,2016
-# Loading work.mux7to1
+# End time: 19:45:06 on Oct 03,2016, Elapsed time: 0:01:13
+# Errors: 3, Warnings: 0
+# vsim ripplecarry 
+# Start time: 19:45:06 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+# ** Error (suppressible): (vish-4008) Object 'SW{2}' not found.
+# Error in macro ./ripplecarry.do line 17
+# ** Error (suppressible): (vish-4008) Object 'SW{2}' not found.
+# 
+#     while executing
+# "force {SW{2}} 0"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:49:44 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 19:49:45 on Oct 03,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 19:49:46 on Oct 03,2016, Elapsed time: 0:04:40
+# Errors: 1, Warnings: 0
+# vsim ripplecarry 
+# Start time: 19:49:46 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+# ** Error (suppressible): (vish-4008) Object 'SW{2}' not found.
+# Error in macro ./ripplecarry.do line 17
+# ** Error (suppressible): (vish-4008) Object 'SW{2}' not found.
+# 
+#     while executing
+# "force {SW{2}} 0"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:50:11 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 19:50:11 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:50:13 on Oct 03,2016, Elapsed time: 0:00:27
+# Errors: 1, Warnings: 0
+# vsim ripplecarry 
+# Start time: 19:50:13 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+# ** Error (suppressible): (vish-4008) Object 'SW{6}' not found.
+# Error in macro ./ripplecarry.do line 21
+# ** Error (suppressible): (vish-4008) Object 'SW{6}' not found.
+# 
+#     while executing
+# "force {SW{6}} 0"
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:50:30 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 19:50:31 on Oct 03,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 19:50:32 on Oct 03,2016, Elapsed time: 0:00:19
+# Errors: 1, Warnings: 0
+# vsim ripplecarry 
+# Start time: 19:50:32 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:01:03 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 20:01:04 on Oct 03,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 20:01:05 on Oct 03,2016, Elapsed time: 0:10:33
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 20:01:05 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:19:22 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 20:19:22 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:19:23 on Oct 03,2016, Elapsed time: 0:18:18
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 20:19:23 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:24:27 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 20:24:27 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:24:28 on Oct 03,2016, Elapsed time: 0:05:05
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 20:24:28 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:25:22 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 20:25:22 on Oct 03,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:25:23 on Oct 03,2016, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 20:25:23 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
+do ripplecarry.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:33:55 on Oct 03,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns ripplecarry.v 
+# -- Compiling module fulladder
+# -- Compiling module ripplecarry
+# 
+# Top level modules:
+# 	ripplecarry
+# End time: 20:33:56 on Oct 03,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 20:33:58 on Oct 03,2016, Elapsed time: 0:08:35
+# Errors: 0, Warnings: 0
+# vsim ripplecarry 
+# Start time: 20:33:58 on Oct 03,2016
+# Loading work.ripplecarry
+# Loading work.fulladder
