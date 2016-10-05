@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab3/partIII
 valu
-Z1 !s110 1475620985
+Z1 !s110 1475628115
 !i10b 1
-!s100 _;[O@o:AJ3C<aQ27aLX?^3
-I9APJMO<;m`KE0Zk]P0g@N3
+!s100 YkB3bP]23Q^5RZ<NQo:Dc1
+I:mK2UTFbHzWzg2RQTTU?D1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1475620975
+Z3 w1475628111
 Z4 8alu.v
 Z5 Falu.v
 L0 1
@@ -23,22 +23,222 @@ Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1475620985.000000
+Z7 !s108 1475628115.000000
 Z8 !s107 alu.v|
 Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|alu.v|
 !i113 1
 Z10 o-timescale 1ns/1ns
-vfunction5
+vfive
 R1
 !i10b 1
-!s100 <^JK;902E>^1@T[zLde_I0
-INZEZedgSS]_bm1V898D2D2
+!s100 Q8HB4d4A]_EdSNZSdmT]80
+IQ9Kh2A^Xg6XI4Vf1n7@h42
 R2
 R0
 R3
 R4
 R5
-L0 66
+L0 257
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfour
+R1
+!i10b 1
+!s100 aje`_AhjM_Il25Y^5O6NB2
+IS?CkBYgzOISGg]]GTLHB<1
+R2
+R0
+R3
+R4
+R5
+L0 247
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfulladder
+R1
+!i10b 1
+!s100 F`UIZ>4b][K<K?`K4TJCz0
+IEEoR:jc5b;=1_K=]]WUJk1
+R2
+R0
+R3
+R4
+R5
+L0 139
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfunction5
+R1
+!i10b 1
+!s100 i<DAlF2`ojfzOmad0mX^k1
+IbRNCFe=n3abLS@n4eKMRk2
+R2
+R0
+R3
+R4
+R5
+L0 70
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vhex_play
+R1
+!i10b 1
+!s100 :AiEWoeTO=gbd_^jFBmYn2
+I7WO_RFid7PC<57`D<j:]K3
+R2
+R0
+R3
+R4
+R5
+L0 152
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vone
+R1
+!i10b 1
+!s100 D30<Cejc38jJ=POMLW4d01
+IUYn1;g0YRoi<DzNYA7gVj3
+R2
+R0
+R3
+R4
+R5
+L0 217
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vripplecarry
+R1
+!i10b 1
+!s100 C2[cJ:Zo2G`UYeOinE;Cz2
+I07HR1WZMG?_UBlI2M<cN<2
+R2
+R0
+R3
+R4
+R5
+L0 100
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsix
+R1
+!i10b 1
+!s100 HL@Ddfk8>c1HRHUAZdf_m2
+IY:ejFD5Pgo]^W[m`OXLFI2
+R2
+R0
+R3
+R4
+R5
+L0 267
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vthree
+R1
+!i10b 1
+!s100 ALS2P<WhVZeY`ml_LJcG21
+IA@gHCRL3;W92lkABBn[Z73
+R2
+R0
+R3
+R4
+R5
+L0 237
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vtwo
+R1
+!i10b 1
+!s100 e6[4@DcSBV0`?zF?DPMGi2
+I>keLBi99KV^X@DiMYKYg42
+R2
+R0
+R3
+R4
+R5
+L0 227
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vzero
+R1
+!i10b 1
+!s100 ]CTd]iDJmPSmG?m>ELUNJ3
+IUe8Qj=EGAHLj8T9@f7eO_1
+R2
+R0
+R3
+R4
+R5
+L0 207
 R6
 r1
 !s85 0
