@@ -1,144 +1,124 @@
-module hex_display(SW, HEX);
-	input [9:0] SW;
+module hex_display(SW,HEX);
+	input [3:0] SW;
 	output [6:0] HEX;
 	
-	zeroth hex0(
-		.a(SW[0]), // c_0
-		.b(SW[1]), // c_1
-		.c(SW[2]), // c_2
-		.d(SW[3]), // c_3
+	zero m1(
+		.a(SW[0]),
+		.b(SW[1]),
+		.c(SW[2]),
+		.d(SW[3]),
 		.m(HEX[0])
-	);
-	
-	first hex1(
+		);
+	one m2(
 		.a(SW[0]),
 		.b(SW[1]),
 		.c(SW[2]),
 		.d(SW[3]),
 		.m(HEX[1])
-	);
-	
-	second hex2(
+		);
+	two m3(
 		.a(SW[0]),
 		.b(SW[1]),
 		.c(SW[2]),
 		.d(SW[3]),
 		.m(HEX[2])
-	);
-	
-	third hex3(
+		);
+	three m4(
 		.a(SW[0]),
 		.b(SW[1]),
 		.c(SW[2]),
 		.d(SW[3]),
 		.m(HEX[3])
-	);
-	
-	fourth hex4(
+		);
+   four m5(
 		.a(SW[0]),
 		.b(SW[1]),
 		.c(SW[2]),
 		.d(SW[3]),
 		.m(HEX[4])
-	);
-	
-	fifth hex5(
+		);
+	five m6(
 		.a(SW[0]),
 		.b(SW[1]),
 		.c(SW[2]),
 		.d(SW[3]),
 		.m(HEX[5])
-	);
-	
-	sixth hex6(
+		);
+	six m7(
 		.a(SW[0]),
 		.b(SW[1]),
 		.c(SW[2]),
 		.d(SW[3]),
 		.m(HEX[6])
-	);
+		);
 endmodule
 
-
-module zeroth(a, b, c, d, m);
+module zero(a,b,c,d,m);
 	input a;
 	input b;
 	input c;
 	input d;
 	output m;
 	
-	//assign m = ~((a & ~d) | (~b & ~d) | (~a & c) | (a & ~b & ~c) | (~a & b & d) | (b & c & d));
-	assign m = (~a & b & ~c & ~d) | (a & b & ~c & d) | (a & ~b & c & d);
+	assign m = ~((b & c) | (~a & d) | (~a & ~c) | (~b & ~c & d) | (a & c & ~d) | (b & ~c & ~d));
 endmodule
 
-
-module first(a, b, c, d, m);
+module one(a,b,c,d,m);
 	input a;
 	input b;
 	input c;
 	input d;
 	output m;
 	
-	// assign m = ~((~b & ~c) | (~b & ~d) | (~a & ~c & ~d) | (a & ~c & d) | (~a & c & d));
-	assign m = (b & c & ~d) | (a & b & ~d) | (a & c & d) | (~a & b & ~c & d); 
+	assign m = ~((~c & ~a) | (~c & ~d) | (d & a & ~b) | (~d & a & b) | (~d & ~a & ~b));
 endmodule
 
-
-module second(a, b, c, d, m);
+module two(a,b,c,d,m);
 	input a;
 	input b;
 	input c;
 	input d;
 	output m;
 	
-	//assign m = ~((~a & ~c) | (~a & d) | (~b & ~c) | (~b & d) | (a & ~c & d) | (~a & b & c) | (a & ~b & c));
-	assign m = (a & b & c) | (a & b & ~d) | (~a & ~b & ~c & d) | (~a & ~b & c & ~d);
+	assign m = ~((c & ~d) | (~c & d) | (a & ~c) | (a & ~b) | (~d & ~a & ~b));
 endmodule
 
-
-module third(a, b, c, d, m);
+module three(a,b,c,d,m);
 	input a;
 	input b;
 	input c;
 	input d;
 	output m;
 	
-	// assign m = ~((a & ~c) | (~a & ~b & ~d) | (b & ~c & d) | (~b & c & d) | (b & c & ~d));
-	assign m = (b & c & d) | (~a & ~b & ~c & d) | (~a & b & ~c & ~d) | (a & ~b & c & ~d);
+	assign m = ~((c & a & ~b) | (c & ~a & b) | (d & ~a & ~b) | (~c & ~a & ~b) | (~c & a & b) | (b & ~c & ~d));
 endmodule
 
+module four(a,b,c,d,m);
+	input a;
+	input b;
+	input c;
+	input d;
+	output m;
 
-module fourth(a, b, c, d, m);
+   assign m = ~((b & d) | (~a & d) | (~c & ~a) | (c & d & ~b) | (~d & ~a & b));
+endmodule
+
+module five(a,b,c,d,m);
 	input a;
 	input b;
 	input c;
 	input d;
 	output m;
 	
-	// assign m = ~((a & c) | (a & ~d) | (~a & ~b & ~d) | (~a & c & ~d) | (a & b & d));
-	assign m = (a & d) | (~a & b & ~c) | (~b & ~c & d);
+	assign m = ~((b & d) | (~a & d) | (~a & c) | (~a & ~b) | (~b & c & ~d) | (~b & ~c & d));
 endmodule
 
-
-module fifth(a, b, c, d, m);
+module six(a,b,c,d,m);
 	input a;
 	input b;
 	input c;
 	input d;
 	output m;
 	
-	// assign m = ~((a & c) | (a & ~d) | (~a & ~c & ~d) | (~a & b & ~d) | (~a & b & c) | (a & ~b & d));
-	assign m = (~a & ~b & c) | (~a & ~b & c) | (a & c & d) | (a & b & ~c & d);
-endmodule
-
-
-module sixth(a, b, c, d, m);
-	input a;
-	input b;
-	input c;
-	input d;
-	output m;
-	
-	// assign m = ~((a & c) | (a & d) | (~b & c) | (~a & b & ~c) | (a & ~b & ~c) | (~a & c & ~d));
-	assign (~a & ~b & ~c) | (~a & b & c & d) | (a & b & ~c & ~d);
+	assign m = ~((d & a) | (d & b) | (~c & b) | (~a & c & ~d) | (~b & c & ~d) | (~b & ~c & d));
 endmodule

@@ -27,12 +27,12 @@ module alu(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 	always @(*)
 	begin
 		case(KEY[2:0])
-			3'b000: ALUout = {SW[7:4], SW[3:0]};
-			3'b001: ALUout = {3'b000, w3[9], w3[3:0]};
-			3'b010: ALUout = SW[7:4] + SW[3:0];
-			3'b011: ALUout = {SW[7:4] | SW[3:0], SW[7:4] ^ SW[3:0]};
-			3'b100: ALUout = {7'b0000000, SW[7] | SW[6] | SW[5] | SW[4] | SW[3] | SW[2] | SW[1] | SW[0]};
-			3'b101: ALUout = {7'b0000000, w1 & w2};
+			3'b111: ALUout = {SW[7:4], SW[3:0]};
+			3'b110: ALUout = {3'b000, w3[9], w3[3:0]};
+			3'b101: ALUout = SW[7:4] + SW[3:0];
+			3'b100: ALUout = {SW[7:4] | SW[3:0], SW[7:4] ^ SW[3:0]};
+			3'b011: ALUout = {7'b0000000, SW[7] | SW[6] | SW[5] | SW[4] | SW[3] | SW[2] | SW[1] | SW[0]};
+			3'b010: ALUout = {7'b0000000, w1 & w2};
 			default: ALUout = 8'b00000000;
 		endcase
 	end
@@ -44,7 +44,7 @@ module alu(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 		.HEX(HEX0[6:0])
 	);
 	hex_play hex1(
-		.SW(4'b1111),
+		.SW(4'b0000),
 		.HEX(HEX1[6:0])
 	);
 	hex_play hex2(
@@ -52,7 +52,7 @@ module alu(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 		.HEX(HEX2[6:0])
 	);
 	hex_play hex3(
-		.SW(4'b1111),
+		.SW(4'b0000),
 		.HEX(HEX3[6:0])
 	);
 	hex_play hex4(
@@ -60,7 +60,7 @@ module alu(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 		.HEX(HEX4[6:0])
 	);
 	hex_play hex5(
-		.SW(ALUout[4:0]),
+		.SW(ALUout[7:4]),
 		.HEX(HEX5[6:0])
 	);
 endmodule
@@ -251,7 +251,7 @@ module four(a,b,c,d,m);
 	input d;
 	output m;
 
-   assign m = ~((b & d) | (~a & d) | (~c & ~a) | (c & a & ~b));
+   assign m = ~((b & d) | (~a & d) | (~c & ~a) | (c & d & ~b) | (~d & ~a & b));
 endmodule
 
 module five(a,b,c,d,m);
