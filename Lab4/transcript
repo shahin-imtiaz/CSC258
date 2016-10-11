@@ -1,0 +1,205 @@
+pwd
+# /h/u5/c5/04/kongxi16/CSC258/Lab4
+cd ../tryingshitout
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:22:00 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module registor
+# ** Error: try.v(8): (vlog-2110) Illegal reference to net "q".
+# ** Error: try.v(10): (vlog-2110) Illegal reference to net "q".
+# End time: 16:22:00 on Oct 10,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./try.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns try.v"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:22:21 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	registor
+# End time: 16:22:21 on Oct 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:22:21 on Oct 10,2016
+# Loading work.try
+# ** Error: evaluating expression "d[7: 0]"
+# No object found matching "d".
+# Error in macro ./try.do line 11
+# evaluating expression "d[7: 0]"
+# No object found matching "d".
+# 
+#     while executing
+# "force {d[7: 0]} 2#00000000 0, 2#11111111 20, 2#11000011 40 -r 60"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:25:24 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	try
+# 	registor
+# End time: 16:25:25 on Oct 10,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 16:25:25 on Oct 10,2016, Elapsed time: 0:03:04
+# Errors: 2, Warnings: 0
+# vsim try 
+# Start time: 16:25:25 on Oct 10,2016
+# Loading work.try
+# ** Error: (vsim-3033) try.v(4): Instantiation of 'register' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /try File: try.v
+#         Searched libraries:
+#             /h/u5/c5/04/kongxi16/CSC258/tryingshitout/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./try.do PAUSED at line 5
+cd ../tryingshitout
+cd ../tryingshitout
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:26:23 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	try
+# End time: 16:26:24 on Oct 10,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:25:25 on Oct 10,2016
+# Loading work.try
+# Loading work.registor
+# ** Warning: (vsim-3015) try.v(4): [PCDPC] - Port size (1) does not match connection size (8) for port 'q'. The port definition is at: try.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /try/r0 File: try.v
+# ** Error: evaluating expression "d[7: 0]"
+# No object found matching "d".
+# Error in macro ./try.do line 11
+# evaluating expression "d[7: 0]"
+# No object found matching "d".
+# 
+#     while executing
+# "force {d[7: 0]} 2#00000000 0, 2#11111111 20, 2#11000011 40 -r 60"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:41:51 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	try
+# End time: 16:41:51 on Oct 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:41:52 on Oct 10,2016, Elapsed time: 0:16:27
+# Errors: 3, Warnings: 1
+# vsim try 
+# Start time: 16:41:52 on Oct 10,2016
+# Loading work.try
+# Loading work.registor
+# ** Warning: (vsim-3015) try.v(4): [PCDPC] - Port size (1) does not match connection size (8) for port 'q'. The port definition is at: try.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /try/r0 File: try.v
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:42:27 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	try
+# End time: 16:42:28 on Oct 10,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 16:42:28 on Oct 10,2016, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 1
+# vsim try 
+# Start time: 16:42:28 on Oct 10,2016
+# Loading work.try
+# Loading work.registor
+# ** Warning: (vsim-3015) try.v(4): [PCDPC] - Port size (1) does not match connection size (8) for port 'q'. The port definition is at: try.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /try/r0 File: try.v
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:43:17 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	try
+# End time: 16:43:17 on Oct 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:43:18 on Oct 10,2016, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 1
+# vsim try 
+# Start time: 16:43:18 on Oct 10,2016
+# Loading work.try
+# Loading work.registor
+# ** Warning: (vsim-3015) try.v(4): [PCDPC] - Port size (1) does not match connection size (8) for port 'q'. The port definition is at: try.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /try/r0 File: try.v
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:44:34 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# ** Error: try.v(16): 'Port' must not be declared to be an array: q.
+# End time: 16:44:34 on Oct 10,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./try.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns try.v"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:44:57 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	try
+# End time: 16:44:57 on Oct 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:44:59 on Oct 10,2016, Elapsed time: 0:01:41
+# Errors: 4, Warnings: 1
+# vsim try 
+# Start time: 16:44:59 on Oct 10,2016
+# Loading work.try
+# Loading work.registor
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:49:27 on Oct 10,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# -- Compiling module registor
+# 
+# Top level modules:
+# 	try
+# End time: 16:49:27 on Oct 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:49:28 on Oct 10,2016, Elapsed time: 0:04:29
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 16:49:28 on Oct 10,2016
+# Loading work.try
+# Loading work.registor

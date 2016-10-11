@@ -1,0 +1,270 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab4/partII
+valuregister
+Z1 !s110 1476156485
+!i10b 1
+!s100 ]?h7Y1mgh_c?Fn>;g17z[1
+Io;=TNlG2n<7j_nW@JC@2]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1476156478
+Z4 8aluregister.v
+Z5 Faluregister.v
+L0 1
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1476156482.000000
+Z8 !s107 aluregister.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|aluregister.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+vfive
+R1
+!i10b 1
+!s100 AcG4WAZ=e23FDe8a3=dP?1
+IUfm0C_>fb24Lal7YKWVEC3
+R2
+R0
+R3
+R4
+R5
+L0 300
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfour
+R1
+!i10b 1
+!s100 OXdYjW2lM[U?lVkVC?9Aa2
+I=4`?EbRYGz3dMig;2`_f@0
+R2
+R0
+R3
+R4
+R5
+L0 290
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfulladder
+R1
+!i10b 1
+!s100 ojYG`c;Q1M9o33zOkd<AG2
+ISLbcKnMnI9S?a0;]IYL[93
+R2
+R0
+R3
+R4
+R5
+L0 176
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfunction5
+R1
+!i10b 1
+!s100 6`UeoIP<L@h==h]AMcDoZ0
+IG=kdEUYK1<M]d:eDVY8S42
+R2
+R0
+R3
+R4
+R5
+L0 102
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vhex_play
+R1
+!i10b 1
+!s100 E9e8ZV>F8WX3IB_BM<X4Y3
+I8@hnf>iU]H_lj9R6X<=:o2
+R2
+R0
+R3
+R4
+R5
+L0 195
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vone
+R1
+!i10b 1
+!s100 AoQ3gB8NjBlHCO@Wz:7KM0
+I;k<RH<>GVTI9gz61k4E^N2
+R2
+R0
+R3
+R4
+R5
+L0 260
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vregistor
+R1
+!i10b 1
+!s100 T@LF=jmBz`N43YHTO3[X11
+IHhUggi9OZSonO9NmJg9g30
+R2
+R0
+R3
+R4
+R5
+L0 82
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vripplecarry
+R1
+!i10b 1
+!s100 3^6^j?UB_]4Q3zSX1l2zc0
+I9hRRnJGNCbX4n07P8f^^i3
+R2
+R0
+R3
+R4
+R5
+L0 137
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vsix
+R1
+!i10b 1
+!s100 dS=F3@hXNB82Q6SI@e`Vg1
+IKfJFnO<b`1S12nNlbFo<a1
+R2
+R0
+R3
+R4
+R5
+L0 310
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vthree
+R1
+!i10b 1
+!s100 :DbcBBT[h8?i3T_@IJ44b1
+I08mMljIkozlISM<8QLdRG0
+R2
+R0
+R3
+R4
+R5
+L0 280
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vtwo
+R1
+!i10b 1
+!s100 ^kQWV6`YmNLa5e6Ja2[MJ0
+ICCV>kdzlH>@`1bQk5c4P@2
+R2
+R0
+R3
+R4
+R5
+L0 270
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vzero
+R1
+!i10b 1
+!s100 emX[[Q9SLcAEO>9Xn_i7@2
+I9VF[@HQ5]oZe?3e:OQTYo0
+R2
+R0
+R3
+R4
+R5
+L0 250
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
