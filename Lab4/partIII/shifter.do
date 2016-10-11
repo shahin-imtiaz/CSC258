@@ -7,3 +7,4 @@ vsim shifter
 log {/*}
 
 add wave {/*}
+
