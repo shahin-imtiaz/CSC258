@@ -8,9 +8,18 @@ log {/*}
 
 add wave {/*}
 
-force {SW[7: 0]} 2#00000000 0, 2#11111111 20, 2#11000011 40 -r 60
-force {SW[9]} 2#1 0, 2#0 10 -r 20 
-force {SW[8]} 2#1 0, 2#0 60 -r 120
+# load_val
+force {SW[0]} 1 0, 0 40
+# in
+force {SW[1]} 0 0, 1 40
+# load_n
+force {SW[6]} 1 0, 0 20 -r 40
+# shift
+force {SW[7]} 1 0, 0 10 -r 20
+# clk
+force {SW[8]} 0 0, 1 5 -r 10
+# reset_n
+force {SW[9]} 1
 
-run 120ns
+run 40ns
 
