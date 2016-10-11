@@ -1,16 +1,16 @@
 module aluregister(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 	input [9:0] SW; // SW[3:0] = A; SW[9] = reset_n; SW[7:5] = function_input
-	input [1:0] KEY; // KEY[0] = clk
+	input [0:0] KEY; // KEY[0] = clk
 	output [7:0] LEDR; // LEDR = ALUout; B = LEDR[3:0] = ALUout[3:0]
 	output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5; // HEX0 = A; HEX[1:3] = 0; {HEX4, HEX5} = ALUout[7:0]
 	
 	reg [7:0] ALUout;
 	wire w1, w2;
 	wire [9:0] w3;
-	wire [7:0] win, wout;
+	wire [7:0] wout;
 	
 	registor r0(
-		.d(win[7:0]),
+		.d(ALUout[7:0]),
 		.clk(KEY[0]),
 		.reset_n(SW[9]),
 		.q(wout[7:0])
@@ -47,7 +47,6 @@ module aluregister(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 	end
 	
 	assign LEDR[7:0] = ALUout[7:0];
-	assign win = LEDR[3:0];
 	
 	hex_play hex0(
 		.SW(SW[3:0]),
