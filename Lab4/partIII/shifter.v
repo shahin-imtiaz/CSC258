@@ -1,4 +1,4 @@
-module shifter(SW, KEY, LEDR);
+ module shifter(SW, KEY, LEDR);
 	input [9:0] SW; // SW[7:0] = LoadVal[7:0]; SW[9] = reset_n
 	input [3:0] KEY; // KEY[0] = clk; KEY[1] = Load_n; KEY[2] = ShiftRight; KEY[3] = ASR
 	output [7:0] LEDR; // LEDR = q
@@ -21,6 +21,14 @@ module shifter8bit(LoadVal, Load_n, ShiftRight, ASR, clk, reset_n, q);
 	input Load_n, ShiftRight, ASR, clk, reset_n;
 	output [7:0] q;
 	
+	wire w0;
+	
+	asrcircuit asr7(
+		.asr(ASR),
+		.first(LoadVal[7]),
+		.m(w0)
+	);
+	
 	shifterbit s7(
 		.load_val(LoadVal[7]),
 		.load_n(Load_n),
@@ -28,7 +36,7 @@ module shifter8bit(LoadVal, Load_n, ShiftRight, ASR, clk, reset_n, q);
 		.clk(clk),
 		.reset_n(reset_n),
 		// Leftmost input?
-		.in(ASR),
+		.in(w0),
 		.out(q[7])
 	);
 	
@@ -105,6 +113,20 @@ module shifter8bit(LoadVal, Load_n, ShiftRight, ASR, clk, reset_n, q);
 endmodule
 
 
+// asrcircuit
+module asrcircuit(asr, first, m);
+	input asr, first;
+	output reg m;
+	always @(*)
+	begin
+		if (asr == 1'b1)
+			m <= first;
+		else
+			m <= 1'b0;
+	end
+endmodule
+
+
 // shifterbit
 module shifterbit(load_val, load_n, clk, reset_n, shift, in, out);
 	input load_val, load_n, clk, reset_n, shift, in;
@@ -139,9 +161,9 @@ endmodule
 // dff
 module dff(d, clk, r, q);
 	input d, clk, r;
-	output out;
+	output q;
 	
-	reg out;
+	reg q;
 	
 	always @(posedge clk)
 	begin
