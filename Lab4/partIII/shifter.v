@@ -148,7 +148,7 @@ module shifterbit(load_val, load_n, clk, reset_n, shift, in, out);
 		.m(w1)
 	);
 	
-	dff d0(
+	dfflop d0(
 		.d(w1),
 		.clk(clk),
 		.r(reset_n),
@@ -159,8 +159,9 @@ endmodule
 
 
 // dff
-module dff(d, clk, r, q);
-	input d, clk, r;
+module dfflop(d, clk, r, q);
+	input d, clk;
+	input r;
 	output q;
 	
 	reg q;
