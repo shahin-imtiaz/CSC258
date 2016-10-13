@@ -46,7 +46,7 @@ module aluregister(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
 		endcase
 	end
 	
-	assign LEDR[7:0] = ALUout[7:0];
+	assign LEDR[7:0] = wout[7:0];
 	
 	hex_play hex0(
 		.SW(SW[3:0]),
