@@ -7,7 +7,3 @@ vsim clkcounter
 log {/*}
 
 add wave {/*}
-
-
-
-force 

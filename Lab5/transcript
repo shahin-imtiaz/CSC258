@@ -1,0 +1,220 @@
+pwd
+# /h/u5/c5/04/kongxi16/CSC258/Lab5
+cd partI
+do counter.
+# Cannot open macro file: counter.
+do counter.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:30:12 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
+# -- Compiling module counter
+# -- Compiling module tff
+# 
+# Top level modules:
+# 	counter
+# End time: 16:30:12 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim counter 
+# Start time: 16:30:12 on Oct 24,2016
+# Loading work.counter
+# Loading work.tff
+do counter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:34:46 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
+# -- Compiling module counter
+# -- Compiling module tff
+# 
+# Top level modules:
+# 	counter
+# End time: 16:34:46 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:34:46 on Oct 24,2016, Elapsed time: 0:04:34
+# Errors: 0, Warnings: 0
+# vsim counter 
+# Start time: 16:34:46 on Oct 24,2016
+# Loading work.counter
+# Loading work.tff
+do counter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:35:46 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
+# -- Compiling module counter
+# -- Compiling module tff
+# 
+# Top level modules:
+# 	counter
+# End time: 16:35:46 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:35:46 on Oct 24,2016, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 0
+# vsim counter 
+# Start time: 16:35:46 on Oct 24,2016
+# Loading work.counter
+# Loading work.tff
+do counter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:36:40 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
+# -- Compiling module counter
+# -- Compiling module tff
+# 
+# Top level modules:
+# 	counter
+# End time: 16:36:40 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:36:40 on Oct 24,2016, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
+# vsim counter 
+# Start time: 16:36:40 on Oct 24,2016
+# Loading work.counter
+# Loading work.tff
+do counter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:37:53 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
+# -- Compiling module counter
+# -- Compiling module tff
+# 
+# Top level modules:
+# 	counter
+# End time: 16:37:53 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:37:53 on Oct 24,2016, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0
+# vsim counter 
+# Start time: 16:37:53 on Oct 24,2016
+# Loading work.counter
+# Loading work.tff
+do counter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 16:40:55 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns counter.v 
+# -- Compiling module counter
+# -- Compiling module tff
+# 
+# Top level modules:
+# 	counter
+# End time: 16:40:55 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:40:56 on Oct 24,2016, Elapsed time: 0:03:03
+# Errors: 0, Warnings: 0
+# vsim counter 
+# Start time: 16:40:56 on Oct 24,2016
+# Loading work.counter
+# Loading work.tff
+cd ../partII
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+quit -sim
+# End time: 17:00:12 on Oct 24,2016, Elapsed time: 0:19:16
+# Errors: 1, Warnings: 0
+cd ../partII
+quit -sim
+cd ../../tryingshitout
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:37:26 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# ** Error: try.v(2): Missing Identifier.
+# ** Error: (vlog-13069) try.v(3): near "{": syntax error, unexpected '{', expecting ',' or '}'.
+# ** Error: try.v(1): (vlog-2730) Undefined variable: 'in'.
+# ** Error: try.v(1): Identifier must be declared with a port mode: in.
+# ** Error: try.v(1): Identifier must be declared with a port mode: out.
+# End time: 18:37:26 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./try.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns try.v"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:37:47 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# ** Error: try.v(2): Missing Identifier.
+# ** Error: (vlog-13069) try.v(3): near "{": syntax error, unexpected '{', expecting ',' or '}'.
+# ** Error: try.v(1): Identifier must be declared with a port mode: out.
+# End time: 18:37:47 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./try.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns try.v"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:38:05 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# ** Error: try.v(2): Missing Identifier.
+# ** Error: (vlog-13069) try.v(3): near "{": syntax error, unexpected '{', expecting ',' or '}'.
+# ** Error: try.v(1): Identifier must be declared with a port mode: out.
+# End time: 18:38:05 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./try.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns try.v"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:39:19 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# ** Error: try.v(2): Missing Identifier.
+# ** Warning: try.v(3): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Error: try.v(1): Identifier must be declared with a port mode: out.
+# End time: 18:39:19 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./try.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns try.v"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:39:48 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# ** Warning: try.v(3): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	try
+# End time: 18:39:49 on Oct 24,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim try 
+# Start time: 18:39:49 on Oct 24,2016
+# Loading work.try
+# Invalid time value: 10s
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:40:20 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# ** Warning: try.v(3): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	try
+# End time: 18:40:20 on Oct 24,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 18:40:21 on Oct 24,2016, Elapsed time: 0:00:32
+# Errors: 1, Warnings: 1
+# vsim try 
+# Start time: 18:40:21 on Oct 24,2016
+# Loading work.try
+# End time: 18:41:41 on Oct 24,2016, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 0
