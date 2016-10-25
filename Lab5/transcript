@@ -1,25 +1,1087 @@
-ls
-# lab5.pdf
-# partI
-# partII
-# partIII
-# transcript
-cd partII
-do clkrcounter.do
+cd partIII
+do morseencoder.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:08:06 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# ** Error: morseencoder.v(1): Identifier must be declared with a port mode: clk.
+# -- Compiling module shifter
+# ** Error: morseencoder.v(31): (vlog-2730) Undefined variable: 'asr_n'.
+# ** Error: (vlog-13069) morseencoder.v(46): near ">>": syntax error, unexpected >>.
+# ** Error: morseencoder.v(24): Identifier must be declared with a port mode: asr_n.
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# End time: 17:08:06 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./morseencoder.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns morseencoder.v"
+do morseencoder.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 14:03:44 on Oct 25,2016
-# vlog -reportprogress 300 -timescale 1ns/1ps clkrcounter.v 
-# -- Compiling module clkrcounter
-# -- Compiling module displaycounter
+# Start time: 17:08:36 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# ** Error: (vlog-13069) morseencoder.v(46): near ">>": syntax error, unexpected >>.
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# End time: 17:08:36 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./morseencoder.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns morseencoder.v"
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:08:58 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# ** Error: (vlog-13069) morseencoder.v(46): near ">": syntax error, unexpected '>'.
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# End time: 17:08:59 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./morseencoder.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns morseencoder.v"
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:11:42 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
 # -- Compiling module ratedivider
 # 
 # Top level modules:
-# 	clkrcounter
-# End time: 14:03:44 on Oct 25,2016, Elapsed time: 0:00:00
+# 	morseencoder
+# End time: 17:11:42 on Oct 25,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim clkrcounter 
-# Start time: 14:03:44 on Oct 25,2016
-# Loading work.clkrcounter
+# vsim morseencoder 
+# Start time: 17:11:42 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
 # Loading work.ratedivider
-# Loading work.displaycounter
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:12:12 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:12:12 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:12:12 on Oct 25,2016, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:12:12 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:13:42 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:13:42 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:13:42 on Oct 25,2016, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:13:42 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+# WARNING: No extended dataflow license exists
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:17:49 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:17:49 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:17:49 on Oct 25,2016, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 1
+# vsim morseencoder 
+# Start time: 17:17:49 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:20:07 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:20:07 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:20:07 on Oct 25,2016, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:20:07 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:22:30 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:22:30 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:22:30 on Oct 25,2016, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:22:30 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:26:00 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# ** Error: (vlog-13069) morseencoder.v(15): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: morseencoder.v(20): Checker 'lut' not found. Instantiation 'lut0' must be of a visible checker.
+# ** Error: morseencoder.v(22): Checker 'ratedivider' not found. Instantiation 'rd0' must be of a visible checker.
+# ** Error: morseencoder.v(24): LHS in procedural continuous assignment may not be a net: senable.
+# ** Error: morseencoder.v(26): Checker 'shifter' not found. Instantiation 's0' must be of a visible checker.
+# ** Error: (vlog-13069) morseencoder.v(28): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: morseencoder.v(36): Declarations not allowed in unnamed block.
+# ** Error: morseencoder.v(38): Illegal declaration after the statement near line '34'. Declarations must precede statements. Look for stray semicolons.
+# ** Error: (vlog-13069) morseencoder.v(45): near "else": syntax error, unexpected else.
+# ** Error: morseencoder.v(48): (vlog-13205) Syntax error found in the scope following 'q'. Is there a missing '::'?
+# End time: 17:26:00 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./morseencoder.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns morseencoder.v"
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:26:25 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:26:26 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:26:26 on Oct 25,2016, Elapsed time: 0:03:56
+# Errors: 13, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:26:26 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:27:32 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:27:32 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:27:32 on Oct 25,2016, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:27:32 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:29:53 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:29:53 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:29:53 on Oct 25,2016, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:29:53 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:33:10 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:33:11 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:33:11 on Oct 25,2016, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:33:11 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+# ** Error (suppressible): (vish-4008) Object 'start_n' not found.
+# Error in macro ./morseencoder.do line 15
+# ** Error (suppressible): (vish-4008) Object 'start_n' not found.
+# 
+#     while executing
+# "force {start_n} 1 0, 0 20 , 1 30"
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:34:13 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# ** Error: morseencoder.v(12): (vlog-2730) Undefined variable: 'start'.
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# End time: 17:34:13 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./morseencoder.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns morseencoder.v"
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:34:23 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:34:24 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:34:24 on Oct 25,2016, Elapsed time: 0:01:13
+# Errors: 5, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:34:24 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:46:44 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:46:44 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:46:44 on Oct 25,2016, Elapsed time: 0:12:20
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:46:44 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+# ** Error (suppressible): (vish-4008) Object 'start_n' not found.
+# Error in macro ./morseencoder.do line 15
+# ** Error (suppressible): (vish-4008) Object 'start_n' not found.
+# 
+#     while executing
+# "force {start_n} 1 0, 0 20 , 1 30"
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:46:55 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:46:55 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:46:56 on Oct 25,2016, Elapsed time: 0:00:12
+# Errors: 1, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:46:56 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:47:20 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:47:20 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:47:20 on Oct 25,2016, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:47:20 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:47:36 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:47:36 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:47:37 on Oct 25,2016, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:47:37 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:48:05 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:48:06 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:48:06 on Oct 25,2016, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:48:06 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:51:20 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:51:20 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:51:20 on Oct 25,2016, Elapsed time: 0:03:14
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:51:20 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:53:42 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:53:42 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:53:42 on Oct 25,2016, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:53:42 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:54:33 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:54:33 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:54:33 on Oct 25,2016, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:54:33 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:55:43 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:55:43 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:55:43 on Oct 25,2016, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:55:43 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:59:12 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 17:59:12 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:59:13 on Oct 25,2016, Elapsed time: 0:03:30
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 17:59:13 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:04:13 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:04:13 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:04:13 on Oct 25,2016, Elapsed time: 0:05:00
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:04:13 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:05:38 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:05:38 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:05:38 on Oct 25,2016, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:05:38 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:06:35 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:06:35 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:06:35 on Oct 25,2016, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:06:35 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:08:51 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:08:51 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:08:51 on Oct 25,2016, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:08:51 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+quit -sim
+# Window cannot be closed because the modal window "Quit Vsim" is still open.
+# Window cannot be closed because the modal window "Quit Vsim" is still open.
+# End time: 18:17:28 on Oct 25,2016, Elapsed time: 0:08:37
+# Errors: 1, Warnings: 0
+cd ../../tryingshitout
+pwd
+# /h/u5/c5/04/kongxi16/CSC258/tryingshitout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pwd
+# /h/u5/c5/04/kongxi16/CSC258/tryingshitout
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:17:54 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 18:17:54 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 18:17:54 on Oct 25,2016
+# Loading work.try
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+# Error in macro ./try.do line 13
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+#     while executing
+# "force {par_load} 1 0, 0 20,"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:18:07 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 18:18:07 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:18:07 on Oct 25,2016, Elapsed time: 0:00:13
+# Errors: 2, Warnings: 0
+# vsim try 
+# Start time: 18:18:07 on Oct 25,2016
+# Loading work.try
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+# Error in macro ./try.do line 13
+# ** Error: (vsim-4007) A value argument is required.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]
+#     while executing
+# "force {par_load} 1 0, 0 20,"
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:18:25 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 18:18:25 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:18:25 on Oct 25,2016, Elapsed time: 0:00:18
+# Errors: 2, Warnings: 0
+# vsim try 
+# Start time: 18:18:25 on Oct 25,2016
+# Loading work.try
+do try.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:19:29 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns try.v 
+# -- Compiling module try
+# 
+# Top level modules:
+# 	try
+# End time: 18:19:29 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:19:29 on Oct 25,2016, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 0
+# vsim try 
+# Start time: 18:19:29 on Oct 25,2016
+# Loading work.try
+quit -sim
+# End time: 18:21:41 on Oct 25,2016, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 0
+cd ../Lab5
+cd partIII
+ls
+# morseencoder.do
+# morseencoder.do.bak
+# morseencoder.v
+# morseencoder.v.bak
+# transcript
+# vsim.wlf
+# work
+ls
+# morseencoder.do
+# morseencoder.do.bak
+# morseencoder.v
+# morseencoder.v.bak
+# transcript
+# vsim.wlf
+# work
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:22:22 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:22:22 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:22:22 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:26:46 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:26:46 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:26:47 on Oct 25,2016, Elapsed time: 0:04:25
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:26:47 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:27:52 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:27:52 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:27:52 on Oct 25,2016, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:27:52 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:33:42 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:33:42 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:34:46 on Oct 25,2016, Elapsed time: 0:06:54
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:34:46 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+quit -sim
+# End time: 18:34:47 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+quit -sim
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:34:53 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:34:53 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:34:53 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:38:04 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:38:04 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:38:04 on Oct 25,2016, Elapsed time: 0:03:11
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:38:04 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:39:02 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:39:03 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:39:03 on Oct 25,2016, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:39:03 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:40:40 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:40:41 on Oct 25,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:40:41 on Oct 25,2016, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:40:41 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
+do morseencoder.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:41:00 on Oct 25,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns morseencoder.v 
+# -- Compiling module morseencoder
+# -- Compiling module shifter
+# -- Compiling module lut
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	morseencoder
+# End time: 18:41:00 on Oct 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:41:00 on Oct 25,2016, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
+# vsim morseencoder 
+# Start time: 18:41:00 on Oct 25,2016
+# Loading work.morseencoder
+# Loading work.lut
+# Loading work.ratedivider
+# Loading work.shifter
