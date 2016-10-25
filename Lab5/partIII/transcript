@@ -1,0 +1,19 @@
+cd ../partII
+do clkrcounter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:47:00 on Oct 24,2016
+# vlog -reportprogress 300 -timescale 1ns/1ps clkrcounter.v 
+# -- Compiling module clkrcounter
+# -- Compiling module displaycounter
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	clkrcounter
+# End time: 21:47:01 on Oct 24,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim clkrcounter 
+# Start time: 21:47:01 on Oct 24,2016
+# Loading work.clkrcounter
+# Loading work.ratedivider
+# Loading work.displaycounter

@@ -1,4 +1,4 @@
- module shifter(SW, KEY, LEDR);
+module shifter(SW, KEY, LEDR);
 	input [9:0] SW; // SW[7:0] = LoadVal[7:0]; SW[9] = reset_n
 	input [3:0] KEY; // KEY[0] = clk; KEY[1] = Load_n; KEY[2] = ShiftRight; KEY[3] = ASR
 	output [7:0] LEDR; // LEDR = q

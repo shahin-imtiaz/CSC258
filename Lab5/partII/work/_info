@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab5/partII
+vclkcounter
+!s110 1477355094
+!i10b 1
+!s100 0Sof1dSXaI>9TE9hEUj=60
+IS<1d;GAWQ^=FgMTk>:^jn1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1477355090
+Z2 8clkrcounter.v
+Z3 Fclkrcounter.v
+L0 1
+Z4 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1477355094.000000
+!s107 clkrcounter.v|
+!s90 -reportprogress|300|-timescale|1ns/100ps|clkrcounter.v|
+!i113 1
+o-timescale 1ns/100ps
+vclkrcounter
+Z5 !s110 1477418624
+!i10b 1
+!s100 5A82dh94FFzX?[YD8F][j1
+I8IPZR7HRA3UUD<UR72WUG0
+R1
+R0
+Z6 w1477355857
+R2
+R3
+L0 1
+R4
+r1
+!s85 0
+31
+Z7 !s108 1477418624.000000
+Z8 !s107 clkrcounter.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ps|clkrcounter.v|
+!i113 1
+Z10 o-timescale 1ns/1ps
+vdisplaycounter
+R5
+!i10b 1
+!s100 WNakadYAPVHUdOMRo6Q_f1
+IQfO=MC=JXaUngQ_kPHgKY3
+R1
+R0
+R6
+R2
+R3
+L0 28
+R4
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vratedivider
+R5
+!i10b 1
+!s100 J2R2cnM<holgz?<V436oz3
+I2NU>BH0bhb]8zUj3ao`9K3
+R1
+R0
+R6
+R2
+R3
+L0 50
+R4
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

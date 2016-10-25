@@ -1,4 +1,4 @@
 module try(out);
-	output [3:0] out;
-	assign out = {2'd10};
+	output [25:0] out;
+	assign out = 26'd49999999;
 endmodule
