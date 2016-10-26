@@ -20,15 +20,32 @@ module morse(key, start, clk, asr_n, out, rate);
 	wire shift_enable;
 	wire [24:0] countdown;
 	
+	reg rdenable, par_load;
+	
+	always @(negedge start, negedge asr_n)
+	begin
+		if (asr_n == 0)
+			begin
+			par_load <= 1;
+			rdenable <= 0;
+			end
+		else if (start == 0)
+			begin
+			par_load <= 0;
+			rdenable <= 1'b1;
+			end
+	end
+	
+	
 	assign countdown = (rate == 1) ? 25'd24999999 : 25'd3;
 	
 	lut lut0(key, letter);
 	
-	ratedivider rd0(~start, countdown, clk, asr_n, rdval);
+	ratedivider rd0(rdenable, countdown, clk, asr_n, rdval);
 	
 	assign shift_enable = (rdval == 0) ? 1 : 0;
 	
-	shifter s0(shift_enable, letter, start, asr_n, clk, out);
+	shifter s0(shift_enable, letter, par_load, asr_n, clk, out);
 
 endmodule
 
