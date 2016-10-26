@@ -5,7 +5,7 @@ module counter(SW, KEY, HEX0, HEX1);
 	
 	wire [3:0] h0, h1;
 	
-	counter8 c(SW[1], KEY[0], SW[0], {h0, h1});
+	counter8 c(SW[1], KEY[0], SW[0], {h1, h0});
 	
 	hex hex0(h0, HEX0);
 	hex hex1(h1, HEX1);
@@ -25,19 +25,19 @@ module counter8(enable, clk, clear_b, out);
 	assign w5 = w4 & out[5];
 	assign w6 = w5 & out[6];
 	
-	tff t0(enable, clk, clear_b, out[0]);
-	tff t1(w0, clk, clear_b, out[1]);
-	tff t2(w1, clk, clear_b, out[2]);
-	tff t3(w2, clk, clear_b, out[3]);
-	tff t4(w3, clk, clear_b, out[4]);
-	tff t5(w4, clk, clear_b, out[5]);
-	tff t6(w5, clk, clear_b, out[6]);
-	tff t7(w6, clk, clear_b, out[7]);
+	t_ff t0(enable, clk, clear_b, out[0]);
+	t_ff t1(w0, clk, clear_b, out[1]);
+	t_ff t2(w1, clk, clear_b, out[2]);
+	t_ff t3(w2, clk, clear_b, out[3]);
+	t_ff t4(w3, clk, clear_b, out[4]);
+	t_ff t5(w4, clk, clear_b, out[5]);
+	t_ff t6(w5, clk, clear_b, out[6]);
+	t_ff t7(w6, clk, clear_b, out[7]);
 	
 
 endmodule
 
-module tff(in, clk, clear_b, out);
+module t_ff(in, clk, clear_b, out);
 	input clk, clear_b, in;
 	output reg out;
 	always @(posedge clk, negedge clear_b)
