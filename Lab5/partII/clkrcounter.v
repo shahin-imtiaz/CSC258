@@ -1,4 +1,5 @@
-module clkrcounter(SW, HEX0);
+module clkrcounter(SW, HEX0, CLOCK_50);
+	input CLOCK_50;
 	input [9:0] SW; // 1:0: frequency; 2: enable; 3: reset_n; 7:4: load; 9: par_load
 	output [6:0] HEX0;
 	
@@ -45,16 +46,16 @@ module displaycounter(enable, load, par_load, clk, reset_n, q);
 	input [3:0] load;
 	output reg [3:0] q;
 	
-	always @(posedge clk)
+	always @(posedge clk, negedge reset_n)
 	begin
 		if (reset_n == 1'b0)
-			q <= 0;
+			q <= 4'b0000;
 		else if (par_load == 1'b1)
 			q <= load;
 		else if (enable == 1'b1)
 			begin
 				if (q == 4'b1111)
-					q <= 0;
+					q <= 4'b0000;
 				else
 					q <= q + 1'b1;
 			end
