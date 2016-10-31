@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab6/part1
+vsequence_detector
+!s110 1477949552
+!i10b 1
+!s100 U5CI;hgHXBR50>?GAD2oY1
+I;BXQb_`GcH`gS5Oo8Nnhh1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1477949528
+8sequence_detector.v
+Fsequence_detector.v
+L0 11
+OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1477949552.000000
+!s107 sequence_detector.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|sequence_detector.v|
+!i113 1
+o-timescale 1ns/1ns

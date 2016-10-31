@@ -1,6 +1,4 @@
 // SW[0] reset when 0
-// Synchronous active low reset
-// When simulate first togle to low for 1 clock cicle
 // SW[1] input signal (w)
 
 // KEY[0] clock signal
@@ -9,8 +7,8 @@
 // LEDR[9] displays output
 
 module sequence_detector(SW, KEY, LEDR);
-    input [1:0] SW;
-    input [0:0] KEY;
+    input [9:0] SW;
+    input [3:0] KEY;
     output [9:0] LEDR;
 
     wire w, clock, resetn, out_light;
@@ -36,35 +34,19 @@ module sequence_detector(SW, KEY, LEDR);
                    else Y_D = B;
                end
             B: begin
-                   if (!w) Y_D = A;
+                   if(!w) Y_D = A;
                    else Y_D = C;
                end
-            C: begin
-						if (!w) Y_D = E;
-						else Y_D = D;
-					end
-            D: begin
-						if (!w) Y_D = E;
-						else Y_D = F;
-					end
-            E: begin
-						if (!w) Y_D = A;
-						else Y_D = G;
-					end
-            F: begin
-						if (!w) Y_D = E;
-						else Y_D = F;
-					end
-            G: begin
-						if (!w) Y_D = A;
-						else Y_D = C;
-					end
+            C: ???
+            D: ???
+            E: ???
+            F: ???
+            G: ???
             default: Y_D = A;
         endcase
     end // state_table
     
     // State Register (i.e., FFs)
-	 // Synchronous active low reset
     always @(posedge clock)
     begin: state_FFs
         if(resetn == 1'b0)
@@ -75,7 +57,7 @@ module sequence_detector(SW, KEY, LEDR);
 
     // Output logic
     // Set out_light to 1 to turn on LED when in relevant states
-    assign out_light = ((y_Q == F) || (y_Q == G));
+    assign out_light = ((y_Q == ???) || (y_Q == ???));
 
     assign LEDR[9] = out_light;
     assign LEDR[2:0] = y_Q;

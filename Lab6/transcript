@@ -1,0 +1,77 @@
+ls
+# lab6.pdf
+# part1
+# part2
+# transcript
+cd part1
+do sequence_detector.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:28:42 on Oct 31,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# ** Error: (vlog-13069) sequence_detector.v(78): near ";": syntax error, unexpected ';'.
+# End time: 17:28:42 on Oct 31,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./sequence_detector.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns sequence_detector.v"
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:31:01 on Oct 31,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# ** Error: (vlog-13069) sequence_detector.v(80): near "assign": syntax error, unexpected assign.
+# End time: 17:31:01 on Oct 31,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./sequence_detector.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns sequence_detector.v"
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:31:14 on Oct 31,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# ** Error: (vlog-13069) sequence_detector.v(78): near ";": syntax error, unexpected ';'.
+# End time: 17:31:14 on Oct 31,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./sequence_detector.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns sequence_detector.v"
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:32:11 on Oct 31,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:32:11 on Oct 31,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim sequence_detector 
+# Start time: 17:32:11 on Oct 31,2016
+# Loading work.sequence_detector
+do sequence_detector.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:32:32 on Oct 31,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns sequence_detector.v 
+# -- Compiling module sequence_detector
+# 
+# Top level modules:
+# 	sequence_detector
+# End time: 17:32:32 on Oct 31,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:32:32 on Oct 31,2016, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0
+# vsim sequence_detector 
+# Start time: 17:32:32 on Oct 31,2016
+# Loading work.sequence_detector
