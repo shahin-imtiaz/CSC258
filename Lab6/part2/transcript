@@ -1,0 +1,13 @@
+ls
+# poly_function.v
+# transcript
+touch opoly_function.do
+ls
+# opoly_function.do
+# poly_function.v
+# transcript
+mv opoly_function.do poly_function.do
+ls
+# poly_function.do
+# poly_function.v
+# transcript

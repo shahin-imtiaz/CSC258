@@ -7,10 +7,10 @@
 //HEX0 & HEX1 also displays result
 
 module fpga_top(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
-    input [7:0] SW;
-    input [1:0] KEY;
+    input [9:0] SW;
+    input [3:0] KEY;
     input CLOCK_50;
-    output [7:0] LEDR;
+    output [9:0] LEDR;
     output [6:0] HEX0, HEX1;
 
     wire resetn;
@@ -28,7 +28,7 @@ module fpga_top(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
         .data_result(data_result)
     );
       
-    assign LEDR[7:0] = data_result;
+    assign LEDR[9:0] = {2'b00, data_result};
 
     hex_decoder H0(
         .hex_digit(data_result[3:0]), 
@@ -78,7 +78,6 @@ module part2(
         .clk(clk),
         .resetn(resetn),
 
-		  // registorss loads
         .ld_alu_out(ld_alu_out), 
         .ld_x(ld_x),
         .ld_a(ld_a),
@@ -86,12 +85,10 @@ module part2(
         .ld_c(ld_c), 
         .ld_r(ld_r), 
 
-		  // alu
         .alu_select_a(alu_select_a),
         .alu_select_b(alu_select_b),
         .alu_op(alu_op),
 
-		  // data
         .data_in(data_in),
         .data_result(data_result)
     );
@@ -125,7 +122,6 @@ module control(
                 S_CYCLE_2       = 4'd10;
     
     // Next state logic aka our state table
-	 // TODO: modify. currently A*A + C
     always@(*)
     begin: state_table 
             case (current_state)
@@ -161,16 +157,16 @@ module control(
         case (current_state)
             S_LOAD_A: begin
                 ld_a = 1'b1;
-            end
+                end
             S_LOAD_B: begin
                 ld_b = 1'b1;
-            end
+                end
             S_LOAD_C: begin
                 ld_c = 1'b1;
-            end
+                end
             S_LOAD_X: begin
                 ld_x = 1'b1;
-            end
+                end
             S_CYCLE_0: begin // Do A <- A * A 
                 ld_alu_out = 1'b1; ld_a = 1'b1; // store result back into A
                 alu_select_a = 2'b00; // Select register A
