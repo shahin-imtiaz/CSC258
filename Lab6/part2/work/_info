@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab6/part2
 vcontrol
-Z1 !s110 1478044527
+Z1 !s110 1478045706
 !i10b 1
 !s100 dle14F?F?S=Eo`_LOJI5?1
 I1]?5Z^g9RkCB>=ENDdmc_3
@@ -23,7 +23,7 @@ Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1478044527.000000
+Z7 !s108 1478045706.000000
 Z8 !s107 poly_function.v|
 Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|poly_function.v|
 !i113 1

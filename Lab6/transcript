@@ -490,3 +490,225 @@ do poly_function.do
 # Loading work.part2
 # Loading work.control
 # Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:57:55 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 19:57:56 on Nov 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 19:57:56 on Nov 01,2016, Elapsed time: 0:02:29
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 19:57:56 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:05:27 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:05:27 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:05:27 on Nov 01,2016, Elapsed time: 0:07:31
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:05:27 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:08:45 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:08:45 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:08:45 on Nov 01,2016, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:08:45 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:10:02 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:10:02 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:10:02 on Nov 01,2016, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:10:02 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:10:27 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:10:27 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:10:27 on Nov 01,2016, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:10:27 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:11:45 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:11:45 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:11:45 on Nov 01,2016, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:11:45 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:12:25 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:12:25 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:12:26 on Nov 01,2016, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:12:26 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:12:46 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:12:46 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:12:47 on Nov 01,2016, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:12:47 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:13:58 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:13:58 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:13:58 on Nov 01,2016, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:13:58 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+do poly_function.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:15:06 on Nov 01,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns poly_function.v 
+# -- Compiling module poly_function
+# -- Compiling module part2
+# -- Compiling module control
+# -- Compiling module datapath
+# -- Compiling module hex_decoder
+# 
+# Top level modules:
+# 	poly_function
+# End time: 20:15:06 on Nov 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:15:06 on Nov 01,2016, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0
+# vsim part2 
+# Start time: 20:15:06 on Nov 01,2016
+# Loading work.part2
+# Loading work.control
+# Loading work.datapath
+# End time: 20:15:45 on Nov 01,2016, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0
