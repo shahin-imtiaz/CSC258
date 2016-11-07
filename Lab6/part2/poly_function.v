@@ -7,10 +7,10 @@
 //HEX0 & HEX1 also displays result
 
 module poly_function(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
-    input [7:0] SW;
-    input [1:0] KEY;
+    input [7:0] SW; // data_in
+    input [1:0] KEY; // KEY[0] synchronous reset, KEY[1] go signal
     input CLOCK_50;
-    output [7:0] LEDR;
+    output [7:0] LEDR; // result
     output [6:0] HEX0, HEX1;
 
     wire resetn;

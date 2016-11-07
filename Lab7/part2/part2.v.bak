@@ -18,11 +18,10 @@ module part2
 	);
 
 	input			CLOCK_50;				//	50 MHz
-	input   [9:0]   SW;  // SW[9:7] color(r,g,b), SW[6:0] input(x,y) note: 128*128 since x has 7 bits not 8, set msb to 0
-	input   [3:0]   KEY; // KEY[0] resetn, KEY[1] go, KEY[3] load
+	input   [9:0]   SW;
+	input   [3:0]   KEY;
 
 	// Declare your inputs and outputs here
-	
 	// Do not change the following outputs
 	output			VGA_CLK;   				//	VGA Clock
 	output			VGA_HS;					//	VGA H_SYNC
