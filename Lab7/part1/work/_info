@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab7/part1
+vram32x4
+!s110 1478486092
+!i10b 1
+!s100 ;^BLTO6lghzZ?IMklD^:U3
+I]::DIgRTTPaA03biDT9`c1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1478483664
+8ram32x4.v
+Fram32x4.v
+L0 40
+OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1478486092.000000
+!s107 ram32x4.v|
+!s90 -reportprogress|300|-timescale|1ps/1ps|ram32x4.v|
+!i113 1
+o-timescale 1ps/1ps
