@@ -1,374 +1,547 @@
-add wave -position insertpoint 1ns
-add wave -position insertpoint 1ns
-ls
-# lab7.pdf
-# part1
-# part2
-# part3
-# transcript
-cd part1
-ls
-# greybox_tmp
-# ram32x4.cnx
-# ram32x4.do
-# ram32x4.do.bak
-# ram32x4.qip
-# ram32x4.v
-# ram32x4_bb.qip
-# ram32x4_bb.v
-do ram32x4.do
+add wave -position insertpoint {{vlib work
+
+vlog -timescale 1ps/1ps ram32x4.v
+
+vsim -L altera_mf_ver ram32x4
+
+log {/*}
+
+add wave {/*}}}
+cd part2
+do datapath.do
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:12:38 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:12:39 on Nov 06,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vsim ram32x4 
-# Start time: 21:12:39 on Nov 06,2016
-# Loading work.ram32x4
-# ** Error: (vsim-3033) ram32x4.v(63): Instantiation of 'altsyncram' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /ram32x4 File: ram32x4.v
-#         Searched libraries:
-#             /h/u5/c5/04/kongxi16/CSC258/Lab7/part1/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./ram32x4.do PAUSED at line 5
-vsim -L altera_mf_ver ram32x4.do
-# OpenFile ram32x4.do
-OpenFile ram32x4
-# Error opening /h/u5/c5/04/kongxi16/CSC258/Lab7/part1/ram32x4
-# Path name '/h/u5/c5/04/kongxi16/CSC258/Lab7/part1/ram32x4' doesn't exist.
-vsim -L altera_mf_ver ram32x4.do
-# OpenFile ram32x4.do
-vsim -L altera_mf_ver ram32x4.v
-# OpenFile ram32x4.v
-quit -sim
-# End time: 21:13:37 on Nov 06,2016, Elapsed time: 0:00:58
-# Errors: 1, Warnings: 0
-vsim -L altera_mf_ver ram32x4.do
-# OpenFile ram32x4.do
-do ram32x4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:14:35 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:14:37 on Nov 06,2016, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# vsim ram32x4 
-# Start time: 21:14:37 on Nov 06,2016
-# Loading work.ram32x4
-# ** Error: (vsim-3033) ram32x4.v(63): Instantiation of 'altsyncram' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /ram32x4 File: ram32x4.v
-#         Searched libraries:
-#             /h/u5/c5/04/kongxi16/CSC258/Lab7/part1/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./ram32x4.do PAUSED at line 5
-do ram32x4.do
-# ** Error: invalid command name "qvlib"
-# Error in macro ./ram32x4.do line 1
-# invalid command name "qvlib"
+# ** Error: Error in the specified time literal value of 11. Expected value of 1, 10, or 100.
+# ** Error: (vlog-2102) Bad specification for -timescale option.
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
 #     while executing
-# "qvlib work"
-do ram32x4.do
+# "vlog -timescale 11ns/1ns part2.v"
+do datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:14:37 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:15:24 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:15:24 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:15:24 on Nov 06,2016, Elapsed time: 0:00:47
+# Start time: 20:54:23 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(85): near "input": syntax error, unexpected input, expecting ')'.
+# End time: 20:54:23 on Nov 08,2016, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-# vsim ram32x4 
-# Start time: 21:15:24 on Nov 06,2016
-# Loading work.ram32x4
-# ** Error: (vsim-3033) ram32x4.v(63): Instantiation of 'altsyncram' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /ram32x4 File: ram32x4.v
-#         Searched libraries:
-#             /h/u5/c5/04/kongxi16/CSC258/Lab7/part1/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./ram32x4.do PAUSED at line 7
-do ram32x4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:15:50 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:15:50 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:15:24 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-do ram32x4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:16:11 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:16:11 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:16:11 on Nov 06,2016, Elapsed time: 0:00:47
-# Errors: 1, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:16:11 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-do ram32x4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:16:38 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:16:39 on Nov 06,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 21:16:39 on Nov 06,2016, Elapsed time: 0:00:28
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:16:39 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-do ram32x4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:19:10 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:19:10 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:19:11 on Nov 06,2016, Elapsed time: 0:02:32
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:19:11 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-do ram32x4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:25:00 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:25:00 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:26:04 on Nov 06,2016, Elapsed time: 0:06:53
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:26:04 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# Error in macro ./ram32x4.do line 17
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# 
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
 #     while executing
-# "force {wren} 0 15, 1 25 -r 20"
-do ram32x4.do
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:29:00 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:29:00 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:29:00 on Nov 06,2016, Elapsed time: 0:02:56
+# Start time: 20:55:03 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(86): near ";": syntax error, unexpected ';', expecting ')'.
+# End time: 20:55:03 on Nov 08,2016, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:29:00 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-do ram32x4.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:30:04 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:30:04 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:30:05 on Nov 06,2016, Elapsed time: 0:01:05
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:30:05 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# Error in macro ./ram32x4.do line 13
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# 
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
 #     while executing
-# "force {clock} 0 0, 1 15 -r 10"
-do ram32x4.do
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:30:28 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:30:28 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:30:29 on Nov 06,2016, Elapsed time: 0:00:24
+# Start time: 20:55:44 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13038) part2.v(92): near ")": Missing port in ansi port list.
+# End time: 20:55:44 on Nov 08,2016, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:30:29 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# Error in macro ./ram32x4.do line 13
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# 
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
 #     while executing
-# "force {clock} 0 0, 1 15 -r 10"
-do ram32x4.do
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:30:45 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:30:45 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:30:46 on Nov 06,2016, Elapsed time: 0:00:17
-# Errors: 1, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:30:46 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# Error in macro ./ram32x4.do line 13
-# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
-# 
+# Start time: 20:55:58 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(98): near "wire": syntax error, unexpected wire, expecting ';' or ','.
+# ** Error: (vlog-13069) part2.v(107): near "end": syntax error, unexpected end, expecting ';'.
+# -- Compiling module control
+# End time: 20:55:58 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
 #     while executing
-# "force {clock} 0 0, 1 15 -r 10"
-do ram32x4.do
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:30:58 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
+# Start time: 20:56:24 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: part2.v(106): (vlog-2110) Illegal reference to net "color_out".
+# ** Error: part2.v(114): (vlog-2110) Illegal reference to net "color_out".
+# ** Error: part2.v(133): (vlog-2110) Illegal reference to net "y_out".
+# -- Compiling module control
+# End time: 20:56:25 on Nov 08,2016, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:57:10 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
 # 
 # Top level modules:
-# 	ram32x4
-# End time: 21:30:58 on Nov 06,2016, Elapsed time: 0:00:00
+# 	part2
+# 	datapath
+# 	control
+# End time: 20:57:10 on Nov 08,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 21:30:59 on Nov 06,2016, Elapsed time: 0:00:13
+# vsim datapath 
+# Start time: 20:57:10 on Nov 08,2016
+# Loading work.datapath
+# ** Error: Bad base to make_vreg.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath
+# ** Error: Bad digit in make_vreg.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath
+# ** Error: Bad base to make_vreg.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath
+# ** Error: Bad digit in make_vreg.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath
+# ** Error: Bad base to make_vreg.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath
+# ** Error: Bad digit in make_vreg.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:00:25 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:00:25 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:00:25 on Nov 08,2016, Elapsed time: 0:03:15
+# Errors: 6, Warnings: 0
+# vsim datapath 
+# Start time: 21:00:25 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:02:02 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:02:02 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:02:02 on Nov 08,2016, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:02:02 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:03:50 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:03:50 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:03:50 on Nov 08,2016, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:03:50 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:05:49 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:05:49 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:05:50 on Nov 08,2016, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:05:50 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:06:03 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:06:03 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:06:03 on Nov 08,2016, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:06:03 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:06:44 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:06:45 on Nov 08,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 21:06:45 on Nov 08,2016, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:06:45 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:07:23 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:07:24 on Nov 08,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 21:07:24 on Nov 08,2016, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:07:24 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:23:05 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:23:05 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:23:06 on Nov 08,2016, Elapsed time: 0:15:42
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:23:06 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:25:21 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:25:21 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:25:21 on Nov 08,2016, Elapsed time: 0:02:15
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:25:21 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:25:47 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:25:47 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:25:47 on Nov 08,2016, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:25:47 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:26:22 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:26:22 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:26:22 on Nov 08,2016, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:26:22 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:27:14 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(143): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: part2.v(147): LHS in procedural continuous assignment may not be a net: y_out.
+# ** Error: part2.v(148): LHS in procedural continuous assignment may not be a net: color_out.
+# ** Error: (vlog-13069) part2.v(150): near "endmodule": syntax error, unexpected endmodule.
+# End time: 21:27:14 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:27:19 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:27:19 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:27:19 on Nov 08,2016, Elapsed time: 0:00:57
+# Errors: 7, Warnings: 0
+# vsim datapath 
+# Start time: 21:27:19 on Nov 08,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 21:28:11 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 21:28:11 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:28:12 on Nov 08,2016, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 21:28:12 on Nov 08,2016
+# Loading work.datapath
+do control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:10:22 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# ** Error: (vlog-13069) part2.v(160): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 22:10:22 on Nov 08,2016, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:30:59 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-do ram32x4.do
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./control.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do control.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:31:39 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 21:31:39 on Nov 06,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:31:40 on Nov 06,2016, Elapsed time: 0:00:41
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:31:40 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-do ram32x4.do
+# Start time: 22:10:37 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# ** Error: part2.v(175): (vlog-2730) Undefined variable: 'Load_x_wqit'.
+# End time: 22:10:38 on Nov 08,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./control.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do control.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:34:52 on Nov 06,2016
-# vlog -reportprogress 300 -timescale 1ps/1ps ram32x4.v 
-# -- Compiling module ram32x4
+# Start time: 22:10:52 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# ** Error: part2.v(185): (vlog-2110) Illegal reference to net "ld_x".
+# ** Error: part2.v(186): (vlog-2110) Illegal reference to net "ld_y".
+# ** Error: part2.v(187): (vlog-2110) Illegal reference to net "ld_color".
+# ** Error: part2.v(188): (vlog-2110) Illegal reference to net "writeEn".
+# ** Error: part2.v(192): (vlog-2110) Illegal reference to net "ld_x".
+# ** Error: part2.v(194): (vlog-2110) Illegal reference to net "ld_x".
+# ** Error: part2.v(196): (vlog-2110) Illegal reference to net "ld_y".
+# ** Error: part2.v(196): (vlog-2110) Illegal reference to net "ld_color".
+# ** Error: part2.v(199): (vlog-2110) Illegal reference to net "ld_y".
+# ** Error: part2.v(199): (vlog-2110) Illegal reference to net "ld_color".
+# ** Error: part2.v(202): (vlog-2110) Illegal reference to net "writeEn".
+# End time: 22:10:52 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./control.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:11:04 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
 # 
 # Top level modules:
-# 	ram32x4
-# End time: 21:34:52 on Nov 06,2016, Elapsed time: 0:00:00
+# 	part2
+# 	datapath
+# 	control
+# End time: 22:11:04 on Nov 08,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 21:34:53 on Nov 06,2016, Elapsed time: 0:03:13
+# End time: 22:11:05 on Nov 08,2016, Elapsed time: 0:42:53
+# Errors: 22, Warnings: 0
+# vsim control 
+# Start time: 22:11:05 on Nov 08,2016
+# Loading work.control
+do control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:12:40 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 22:12:41 on Nov 08,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver ram32x4 
-# Start time: 21:34:53 on Nov 06,2016
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# End time: 22:12:41 on Nov 08,2016, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0
+# vsim control 
+# Start time: 22:12:41 on Nov 08,2016
+# Loading work.control
+do control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:17:42 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# 
+# Top level modules:
+# 	part2
+# 	datapath
+# 	control
+# End time: 22:17:42 on Nov 08,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:19:54 on Nov 08,2016, Elapsed time: 0:07:13
+# Errors: 0, Warnings: 0
+# vsim control 
+# Start time: 22:19:54 on Nov 08,2016
+# Loading work.control
+do control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:21:13 on Nov 08,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# -- Compiling module ratedivider
+# 
+# Top level modules:
+# 	part2
+# 	control
+# 	ratedivider
+# End time: 22:21:14 on Nov 08,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 22:21:14 on Nov 08,2016, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 0
+# vsim control 
+# Start time: 22:21:14 on Nov 08,2016
+# Loading work.control

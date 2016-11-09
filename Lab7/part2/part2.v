@@ -69,10 +69,188 @@ module part2
 	// Put your code here. Your code should produce signals x,y,colour and writeEn/plot
 	// for the VGA controller, in addition to any other functionality your design may require.
     
+	ratedivider r0(	.enable(),
+							.load(),
+							.clk(),
+							.reset_n(),
+							.q()); 
+	 
     // Instansiate datapath
-	// datapath d0(...);
-
+	datapath d0(	.clk(),
+						.enable(),
+						.ld_x(),
+						.ld_y(),
+						.ld_color(),
+						.reset_n(),
+						.color_in(),
+						.coord(),
+						.x_out(),
+						.y_out(),
+						.color_out());
     // Instansiate FSM control
-    // control c0(...);
+	control c0(	.clk(),
+					.reset_n(), 
+					.go(),
+					.start(), 
+					.ld_x(), 
+					.ld_y(), 
+					.ld_color(), 
+					.writeEn());
     
+endmodule
+
+
+
+module datapath
+	(
+		input clk, enable,
+		input ld_x, ld_y, ld_color,
+		input reset_n,
+		input [2:0] color_in,
+		input [6:0] coord,
+		output [7:0] x_out,
+		output [6:0] y_out,
+		output [2:0] color_out
+	);
+	
+	reg [2:0] count_x, count_y;
+	reg [7:0] x;
+	reg [6:0] y;
+	reg [2:0] color;
+	wire y_enable;
+	
+	
+	// registors for x, y and color
+	always @(posedge clk) begin
+		if (!reset_n) begin
+			x <= 8'b0;
+			y <= 7'b0;
+			color <= 3'b0;
+		end
+		else begin
+			if (ld_x == 1'b1)
+				x <= {1'b0, coord};
+			if (ld_y == 1'b1)
+				y <= coord;
+			if (ld_color == 1'b1)
+				color <= color_in;
+		end
+	end
+	
+	// counter for x
+	always @(posedge clk) begin
+		if (!reset_n)
+			count_x <= 2'b00;
+		else if (enable && count_y != 2'b11) begin
+			if (count_x == 2'b11)
+				count_x <= 2'b00;
+			else begin
+				count_x <= count_x + 1'b1;
+			end
+		end
+	end
+	
+	assign y_enable = (count_x == 2'b11) ? 1 : 0;
+	
+	// counter for y
+	always @(posedge clk) begin
+		if (!reset_n)
+			count_y <= 2'b00;
+		else if (enable && y_enable) begin
+			if (count_y != 2'b11)
+				count_y <= count_y + 1'b1;
+			else
+				count_y <= 2'b00;
+		end
+	end
+	
+	assign x_out = x + count_x;
+	assign y_out = y + count_y;
+	assign color_out = color;
+	
+endmodule
+
+
+
+
+
+
+module control
+	(
+		input clk, reset_n, go, start,
+		
+		output reg ld_x, ld_y, ld_color, writeEn
+	);
+	
+	reg [2:0] current_state, next_state;
+	
+	// States renaming
+	localparam 	Load_x = 3'd0,
+					Load_x_wait = 3'd1,
+					Load_y_color = 3'd2,
+					Load_y_color_wait = 3'd3,
+					Draw = 3'd4;
+					
+	// State Table
+	always @(*) begin
+		case (current_state)
+			Load_x: next_state = go ? Load_x_wait : Load_x;
+			Load_x_wait: next_state = go ? Load_x_wait : Load_y_color;
+			Load_y_color: next_state = start ? Load_y_color : Load_y_color;
+			Load_y_color_wait: next_state = start ? Load_y_color_wait : Draw;
+			Draw: next_state = Load_x;
+		endcase
+	end
+	
+	// Output Logic
+	always @(*) begin
+		ld_x = 1'b0;
+		ld_y = 1'b0;
+		ld_color = 1'b0;
+		writeEn = 1'b0;
+		
+		case (current_state)
+			Load_x: 
+				ld_x = 1;
+			Load_x_wait: 
+				ld_x = 1;
+			Load_y_color: begin
+				ld_y = 1; ld_color = 1;
+			end
+			Load_y_color_wait: begin
+				ld_y = 1; ld_color = 1;
+			end
+			Draw:
+				writeEn = 1;
+		endcase
+	end
+	
+	// Current State Register
+	always @(posedge clk) begin
+		if (!reset_n)
+			current_state <= Load_x;
+		else
+			current_state <= next_state;
+	end
+
+endmodule
+
+
+module ratedivider(enable, load, clk, reset_n, q);
+	input enable, clk, reset_n;
+	input [27:0] load;
+	output reg [27:0] q;
+	
+	always @(posedge clk)
+	begin
+		if (reset_n == 1'b0)
+			q <= load;
+		else if (enable == 1'b1)
+			begin
+				if (q == 0)
+					q <= load;
+				else
+					q <= q - 1'b1;
+			end
+	end
 endmodule
