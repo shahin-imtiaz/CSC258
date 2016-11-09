@@ -41,6 +41,7 @@ module part2
 	wire [7:0] x;
 	wire [6:0] y;
 	wire writeEn;
+	wire ldx, ldy, ldc;
 
 	// Create an Instance of a VGA controller - there can be only one!
 	// Define the number of colours as well as the initial background
@@ -71,31 +72,31 @@ module part2
     
 	ratedivider r0(	.enable(),
 							.load(),
-							.clk(),
-							.reset_n(),
+							.clk(CLOCK_50),
+							.reset_n(resetn),
 							.q()); 
 	 
     // Instansiate datapath
-	datapath d0(	.clk(),
-						.enable(),
-						.ld_x(),
-						.ld_y(),
-						.ld_color(),
-						.reset_n(),
-						.color_in(),
-						.coord(),
-						.x_out(),
-						.y_out(),
-						.color_out());
+	datapath d0(	.clk(CLOCK_50),
+						.enable(writeEn),
+						.ld_x(ldx),
+						.ld_y(ldy),
+						.ld_color(ldc),
+						.reset_n(resetn),
+						.color_in(SW[9:7]),
+						.coord(SW[6:0]),
+						.x_out(x),
+						.y_out(y),
+						.color_out(colour));
     // Instansiate FSM control
-	control c0(	.clk(),
-					.reset_n(), 
-					.go(),
-					.start(), 
-					.ld_x(), 
-					.ld_y(), 
-					.ld_color(), 
-					.writeEn());
+	control c0(	.clk(CLOCK_50),
+					.reset_n(resetn),
+					.go(KEY[3]),
+					.start(KEY[1]),
+					.ld_x(ldx),
+					.ld_y(ldy),
+					.ld_color(ldc),
+					.writeEn(writeEn));
     
 endmodule
 
