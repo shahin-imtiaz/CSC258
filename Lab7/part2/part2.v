@@ -69,16 +69,9 @@ module part2
 			
 	// Put your code here. Your code should produce signals x,y,colour and writeEn/plot
 	// for the VGA controller, in addition to any other functionality your design may require.
-    
-	ratedivider r0(	.enable(),
-							.load(),
-							.clk(CLOCK_50),
-							.reset_n(resetn),
-							.q()); 
 	 
     // Instansiate datapath
 	datapath d0(	.clk(CLOCK_50),
-						.enable(writeEn),
 						.ld_x(ldx),
 						.ld_y(ldy),
 						.ld_color(ldc),
@@ -91,7 +84,7 @@ module part2
     // Instansiate FSM control
 	control c0(	.clk(CLOCK_50),
 					.reset_n(resetn),
-					.go(KEY[3]),
+					.ld(KEY[3]),
 					.start(KEY[1]),
 					.ld_x(ldx),
 					.ld_y(ldy),
@@ -104,9 +97,9 @@ endmodule
 
 module datapath
 	(
-		input clk, enable,
+		input clk,
 		input ld_x, ld_y, ld_color,
-		input reset_n,
+		input reset_n, enable,
 		input [2:0] color_in,
 		input [6:0] coord,
 		output [7:0] x_out,
@@ -129,11 +122,11 @@ module datapath
 			color <= 3'b0;
 		end
 		else begin
-			if (ld_x == 1'b1)
+			if (ld_x)
 				x <= {1'b0, coord};
-			if (ld_y == 1'b1)
+			if (ld_y)
 				y <= coord;
-			if (ld_color == 1'b1)
+			if (ld_color)
 				color <= color_in;
 		end
 	end
@@ -160,8 +153,6 @@ module datapath
 		else if (enable && y_enable) begin
 			if (count_y != 2'b11)
 				count_y <= count_y + 1'b1;
-			else
-				count_y <= 2'b00;
 		end
 	end
 	
@@ -172,15 +163,11 @@ module datapath
 endmodule
 
 
-
-
-
-
 module control
 	(
-		input clk, reset_n, go, start,
+		input clk, reset_n, ld, start,
 		
-		output reg ld_x, ld_y, ld_color, writeEn
+		output reg ld_x, ld_y, ld_color, writeEn, enable
 	);
 	
 	reg [2:0] current_state, next_state;
@@ -195,11 +182,11 @@ module control
 	// State Table
 	always @(*) begin
 		case (current_state)
-			Load_x: next_state = go ? Load_x_wait : Load_x;
-			Load_x_wait: next_state = go ? Load_x_wait : Load_y_color;
-			Load_y_color: next_state = start ? Load_y_color : Load_y_color;
+			Load_x: next_state = ld ? Load_x_wait : Load_x;
+			Load_x_wait: next_state = ld ? Load_x_wait : Load_y_color;
+			Load_y_color: next_state = start ? Load_y_color : Load_y_color_wait;
 			Load_y_color_wait: next_state = start ? Load_y_color_wait : Draw;
-			Draw: next_state = Load_x;
+			Draw: next_state = ld ? Load_x : Draw;
 		endcase
 	end
 	
@@ -209,6 +196,7 @@ module control
 		ld_y = 1'b0;
 		ld_color = 1'b0;
 		writeEn = 1'b0;
+		enable = 1'b0;
 		
 		case (current_state)
 			Load_x: 
@@ -221,8 +209,9 @@ module control
 			Load_y_color_wait: begin
 				ld_y = 1; ld_color = 1;
 			end
-			Draw:
-				writeEn = 1;
+			Draw: begin
+				writeEn = 1; enable = 1;
+			end
 		endcase
 	end
 	
@@ -237,21 +226,23 @@ module control
 endmodule
 
 
-module ratedivider(enable, load, clk, reset_n, q);
-	input enable, clk, reset_n;
-	input [27:0] load;
-	output reg [27:0] q;
+// test combined
+
+module combined
+	(
+		input clk, reset_n, ld, start,
+		input [2:0] color_in,
+		input [6:0] coord,
+		output [7:0] x_out,
+		output [6:0] y_out,
+		output [2:0] color_out
+	);
 	
-	always @(posedge clk)
-	begin
-		if (reset_n == 1'b0)
-			q <= load;
-		else if (enable == 1'b1)
-			begin
-				if (q == 0)
-					q <= load;
-				else
-					q <= q - 1'b1;
-			end
-	end
+	wire ld_x, ld_y, ld_color, writeEn, enable;
+	
+	control c0(clk, reset_n, ld, start, ld_x, ld_y, ld_color, writeEn, enable);
+	
+	datapath d0(clk, ld_x, ld_y, ld_color, reset_n, enable, color_in, coord, x_out, y_out, color_out);
+	
+
 endmodule
