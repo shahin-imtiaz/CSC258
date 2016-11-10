@@ -1,0 +1,19 @@
+module rate_counter(clock,reset_n,enable,q);
+		input clock;
+		input reset_n;
+		input enable;
+		output reg [19:0] q;
+		
+		always @(posedge clock)
+		begin
+			if(reset_n == 1'b0)
+				q <= 20'b11001110111001100001;
+			else if(enable ==1'b1)
+			begin
+			   if ( q == 20'b00000000000000000000 )
+					q <= 20'b11001110111001100001;
+				else
+					q <= q - 1'b1;
+			end
+		end
+endmodule	
