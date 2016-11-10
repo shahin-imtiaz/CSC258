@@ -13,8 +13,6 @@ force {clk} 0 0, 1 10 -r 20
 
 force {reset_n} 0 0, 1 20
 
-force {enable} 0 0, 1 60
-
 force {coord} 2#1010101 0, 2#1111000 50
 
 force {ld_x} 0 0, 1 30, 0 40

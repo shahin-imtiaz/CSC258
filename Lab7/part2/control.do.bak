@@ -8,13 +8,9 @@ log {/*}
 
 add wave {/*}
 
-# posedge: 10, 30, 50, 70
-force {clk} 0 0, 1 8 -r 16
-
-force {reset_n} 0 0, 1 240
-
-force {go} 0 0, 1 15 -r 120
-
-force {start} 1
+force {ld} 0 0, 1 20, 0 40
+force {reset_n} 0 0, 1 20
+force {clk} 0 0, 1 10 -r 20
+force {start} 0 0, 1 40, 0 0 60
 
 run 500ns

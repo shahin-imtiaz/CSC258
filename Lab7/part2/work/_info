@@ -8,37 +8,57 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/h/u5/c5/04/kongxi16/CSC258/Lab7/part2
-vcontrol
-Z1 !s110 1478661673
+vcombined
+Z1 !s110 1478729664
 !i10b 1
-!s100 ]B712_8jn8gm<A0f=0cNc2
-I0f2X]M^0I_@Z0Tn<80XhR3
+!s100 h`3>@7zh<<M19[jzhlSCh3
+IHX]8aW8ifMGHaoAKF=f[j1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1478661622
+Z3 w1478729660
 Z4 8part2.v
 Z5 Fpart2.v
-L0 156
+L0 231
 Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1478661673.000000
+Z7 !s108 1478729663.000000
 Z8 !s107 part2.v|
 Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|part2.v|
 !i113 1
 Z10 o-timescale 1ns/1ns
-vdatapath
+vcontrol
 R1
 !i10b 1
-!s100 ?4fWe=fM9]JL3gF8W`X?W0
-IUF7]U1ZH=kdRGegn5ZiOa1
+!s100 k74XnlIEbmfn=gf@mYjn?3
+IW:6;]7M^h<5>R<g_R_MQV3
 R2
 R0
 R3
 R4
 R5
-L0 82
+L0 166
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdatapath
+R1
+!i10b 1
+!s100 hOcclMkCoVhe18;TWW:GK3
+IXK@[X<4kPj?;;21V`ENM93
+R2
+R0
+R3
+R4
+R5
+L0 98
 R6
 r1
 !s85 0
@@ -51,8 +71,8 @@ R10
 vpart2
 R1
 !i10b 1
-!s100 ^3hnUgoGnh9ARm[1]C`lF2
-I2P9:^fR07z?K8VWPKd<F=0
+!s100 Q:n:dIFDYK8SKG8BS^USm1
+I=4>NhDz@V^G6D64bDG4;`0
 R2
 R0
 R3
@@ -69,21 +89,21 @@ R9
 !i113 1
 R10
 vratedivider
-R1
+!s110 1478726684
 !i10b 1
-!s100 _YO^7HFi5z`i0DB4Dfh<A1
-Im@Z[Smhk4lGV<2W_:j[lX2
+!s100 78^LF9odfEc<AK:l;Sg:63
+I3OR=HgLC71fka11i6i4Rf2
 R2
 R0
-R3
+w1478726638
 R4
 R5
-L0 217
+L0 232
 R6
 r1
 !s85 0
 31
-R7
+!s108 1478726684.000000
 R8
 R9
 !i113 1
