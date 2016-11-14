@@ -324,18 +324,18 @@ module datapath1(x,y,colour,ld_c,clock,reset_n,enable,X,Y,Colour);
         if (!reset_n) begin
             x1 <= 7'b0; 
             y1 <= 7'b0;
-				co1 <= 3'b0;
+			co1 <= 3'b0;
         end
         else begin
-                x1 <= x ;
+                x1 <= x;
                 y1 <= y;
-					 if(ld_c == 1)
-					 co1 <= colour;
+				if(ld_c == 1)
+					co1 <= colour;
         end
     end
 	counter m1(clock,reset_n,enable,c1);
 	rate_counter m2(clock,reset_n,enable,c2);
-	assign enable_1 = (c2==  2'b00) ? 1 : 0;
+	assign enable_1 = (c2 == 2'b00) ? 1 : 0;
 	counter m3(clock,reset_n,enable_1,c3);
 	assign X = x1 + c1;
 	assign Y = y1 + c3;
