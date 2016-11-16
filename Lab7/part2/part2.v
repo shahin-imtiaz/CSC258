@@ -112,6 +112,7 @@ module datapath
 	reg [6:0] y;
 	reg [2:0] color;
 	wire y_enable;
+	wire [1:0] rate_count_down;
 	
 	
 	// registors for x, y and color
@@ -131,11 +132,38 @@ module datapath
 		end
 	end
 	
+	
+//	// counter for x
+//	always @(posedge clk) begin
+//		if (!reset_n)
+//			count_x <= 2'b00;
+//		else if (enable) begin
+//			if (count_x == 2'b11)
+//				count_x <= 2'b00;
+//			else
+//				count_x <= count_x + 1'b1;
+//		end
+//	end
+//		
+//	rate_divider rd_y(clk, 1'b0, enable, reset_n, rate_count_down);
+//	assign y_enable = (rate_count_down == 2'b00) ? 1 : 0;
+//	
+//	// counter for y
+//	always @(posedge clk) begin
+//		if (!reset_n)
+//			count_y <= 2'b00;
+//		else if (enable && y_enable) begin
+//			if (count_y != 2'b00)
+//				count_y <= count_y + 2'b01;
+//		end
+//	end
+	
+
 	// counter for x
 	always @(posedge clk) begin
 		if (!reset_n)
 			count_x <= 2'b00;
-		else if (enable && count_y != 2'b11) begin
+		else if (enable) begin
 			if (count_x == 2'b11)
 				count_x <= 2'b00;
 			else begin
@@ -153,6 +181,8 @@ module datapath
 		else if (enable && y_enable) begin
 			if (count_y != 2'b11)
 				count_y <= count_y + 1'b1;
+			else 
+				count_y <= 2'b00;
 		end
 	end
 	
@@ -161,6 +191,30 @@ module datapath
 	assign color_out = color;
 	
 endmodule
+
+module rate_divider(input clk, rate, rdenable_in, reset_n, output reg [1:0] q);
+	reg [1:0] delay_count;
+	
+	always @(*) begin
+		case (rate)
+			1'b0: delay_count = 2'b11;
+//			1'b1: delay_count = 4'b1111;
+			default: delay_count = 2'b00;
+		endcase
+	end
+	
+	always @(posedge clk) begin
+		if (!reset_n)
+			q <= delay_count;
+		else if (rdenable_in) begin
+			if (q == 2'b00)
+				q <= delay_count;
+			else
+				q <= q - 1'b1;
+		end
+	end
+endmodule
+
 
 
 module control

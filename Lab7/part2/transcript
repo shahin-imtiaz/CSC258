@@ -1,0 +1,612 @@
+do d
+# Cannot open macro file: d
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:28:35 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 18:28:36 on Nov 14,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 18:28:36 on Nov 14,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:30:18 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 18:30:19 on Nov 14,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:30:20 on Nov 14,2016, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 18:30:20 on Nov 14,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:52:34 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(146): near "'1": syntax error, unexpected UNSIZED_BIT.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 18:52:34 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:52:55 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(146): near "'1": syntax error, unexpected UNSIZED_BIT.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 18:52:55 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:53:38 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(146): near "'1": syntax error, unexpected UNSIZED_BIT.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 18:53:39 on Nov 14,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:54:35 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: (vlog-13069) part2.v(147): near "'1": syntax error, unexpected UNSIZED_BIT.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 18:54:35 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:55:26 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 18:55:26 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:55:27 on Nov 14,2016, Elapsed time: 0:25:07
+# Errors: 16, Warnings: 0
+# vsim datapath 
+# Start time: 18:55:27 on Nov 14,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:30:13 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: (vlog-13069) part2.v(198): near "rate": syntax error, unexpected IDENTIFIER, expecting '('.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:30:13 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:30:28 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: (vlog-13069) part2.v(198): near ":": syntax error, unexpected ':'.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:30:28 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:30:37 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: part2.v(199): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(200): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(201): (vlog-2110) Illegal reference to net "delay_count".
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:30:38 on Nov 14,2016, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:31:27 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: part2.v(199): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(200): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(201): (vlog-2110) Illegal reference to net "delay_count".
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:31:28 on Nov 14,2016, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:32:33 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: part2.v(199): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(200): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(201): (vlog-2110) Illegal reference to net "delay_count".
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:32:33 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:32:50 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: (vlog-13069) part2.v(198): near ":": syntax error, unexpected ':'.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:32:50 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:33:05 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: (vlog-13069) part2.v(198): near "begin": syntax error, unexpected begin.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:33:06 on Nov 14,2016, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:33:37 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: part2.v(199): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(200): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(201): (vlog-2110) Illegal reference to net "delay_count".
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:33:37 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:37:14 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# ** Error: part2.v(199): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(200): (vlog-2110) Illegal reference to net "delay_count".
+# ** Error: part2.v(201): (vlog-2110) Illegal reference to net "delay_count".
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 19:37:14 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:38:42 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 19:38:42 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:38:43 on Nov 14,2016, Elapsed time: 0:43:16
+# Errors: 46, Warnings: 0
+# vsim datapath 
+# Start time: 19:38:43 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:54:29 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 19:54:29 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:54:30 on Nov 14,2016, Elapsed time: 0:15:47
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 19:54:30 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:03:08 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# ** Error: part2.v(149): (vlog-2730) Undefined variable: 'rate_dount_down'.
+# -- Compiling module rate_divider
+# ** Error: part2.v(213): (vlog-2730) Undefined variable: 'countdown'.
+# -- Compiling module control
+# -- Compiling module combined
+# End time: 20:03:08 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns part2.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:03:34 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 20:03:34 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:03:34 on Nov 14,2016, Elapsed time: 0:09:04
+# Errors: 5, Warnings: 0
+# vsim datapath 
+# Start time: 20:03:34 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:04:52 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 20:04:52 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:04:53 on Nov 14,2016, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:04:53 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:05:24 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 20:05:24 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:05:24 on Nov 14,2016, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:05:24 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:07:25 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 20:07:25 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:07:25 on Nov 14,2016, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:07:25 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:20:25 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 20:20:27 on Nov 14,2016, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 20:20:28 on Nov 14,2016, Elapsed time: 0:13:03
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:20:28 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:43:03 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 20:43:03 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:43:04 on Nov 14,2016, Elapsed time: 0:22:36
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:43:04 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+# ** Warning: (vsim-3015) part2.v(148): [PCDPC] - Port size (2) does not match connection size (5) for port 'q'. The port definition is at: part2.v(195).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/rd_y File: part2.v
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:43:47 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	combined
+# End time: 20:43:48 on Nov 14,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 20:43:48 on Nov 14,2016, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 1
+# vsim datapath 
+# Start time: 20:43:48 on Nov 14,2016
+# Loading work.datapath
+# Loading work.rate_divider
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:45:36 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	rate_divider
+# 	combined
+# End time: 20:45:36 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:45:36 on Nov 14,2016, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:45:36 on Nov 14,2016
+# Loading work.datapath
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:46:27 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	rate_divider
+# 	combined
+# End time: 20:46:27 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:46:27 on Nov 14,2016, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 20:46:27 on Nov 14,2016
+# Loading work.datapath
+quit -sim
+# End time: 20:48:43 on Nov 14,2016, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 0
+do combined.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:49:14 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	rate_divider
+# 	combined
+# End time: 20:49:14 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim combined 
+# Start time: 20:49:14 on Nov 14,2016
+# Loading work.combined
+# Loading work.control
+# Loading work.datapath
+do combined.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:49:45 on Nov 14,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
+# -- Compiling module part2
+# -- Compiling module datapath
+# -- Compiling module rate_divider
+# -- Compiling module control
+# -- Compiling module combined
+# 
+# Top level modules:
+# 	part2
+# 	rate_divider
+# 	combined
+# End time: 20:49:45 on Nov 14,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:49:45 on Nov 14,2016, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
+# vsim combined 
+# Start time: 20:49:45 on Nov 14,2016
+# Loading work.combined
+# Loading work.control
+# Loading work.datapath

@@ -1,78 +1,33 @@
-cd part2
-do control.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 16:42:11 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# -- Compiling module control
-# 
-# Top level modules:
-# 	part2
-# End time: 16:42:11 on Nov 09,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim control 
-# Start time: 16:42:11 on Nov 09,2016
-# Loading work.control
-do control.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 16:43:30 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# -- Compiling module control
-# 
-# Top level modules:
-# 	part2
-# End time: 16:43:30 on Nov 09,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 16:43:31 on Nov 09,2016, Elapsed time: 0:01:20
-# Errors: 0, Warnings: 0
-# vsim control 
-# Start time: 16:43:31 on Nov 09,2016
-# Loading work.control
-do control.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 16:44:58 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# -- Compiling module control
-# 
-# Top level modules:
-# 	part2
-# End time: 16:44:58 on Nov 09,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 16:44:59 on Nov 09,2016, Elapsed time: 0:01:28
-# Errors: 0, Warnings: 0
-# vsim control 
-# Start time: 16:44:59 on Nov 09,2016
-# Loading work.control
 ls
-# black.mif
-# control.do
-# control.do.bak
-# control_simulation.png
-# datapath.do
-# datapath.do.bak
-# datapath_simulation.png
-# part2.v
-# part2.v.bak
-# vga_adapter
+# lab7.pdf
+# part1
+# part2
+# part3
+# transcript
+cd part1
+ls
+# db
+# greybox_tmp
+# ram32x4.do
+# ram32x4.do.bak
+# ram32x4.qip
+# ram32x4.v
+# ram32x4_bb.qip
+# ram32x4_bb.v
+# ram_top.v.bak
+# ram_topmodule.qpf
+# ram_topmodule.qsf
+# ram_topmodule.qws
+# ram_topmodule.v
+# ram_topmodule.v.bak
+# simulation.png
 # vsim.wlf
 # work
-touch combined.do
-quit -sim
-# End time: 16:48:17 on Nov 09,2016, Elapsed time: 0:03:18
-# Errors: 0, Warnings: 0
-quit -sim
-do combined.do
+cd ../part2
+do datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:01:48 on Nov 09,2016
+# Start time: 16:23:12 on Nov 14,2016
 # vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
 # -- Compiling module part2
 # -- Compiling module datapath
@@ -82,17 +37,15 @@ do combined.do
 # Top level modules:
 # 	part2
 # 	combined
-# End time: 17:01:48 on Nov 09,2016, Elapsed time: 0:00:00
+# End time: 16:23:13 on Nov 14,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim combined 
-# Start time: 17:01:48 on Nov 09,2016
-# Loading work.combined
-# Loading work.control
+# vsim datapath 
+# Start time: 16:23:13 on Nov 14,2016
 # Loading work.datapath
-do control.do
+do datapath.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:04:27 on Nov 09,2016
+# Start time: 16:25:02 on Nov 14,2016
 # vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
 # -- Compiling module part2
 # -- Compiling module datapath
@@ -102,106 +55,10 @@ do control.do
 # Top level modules:
 # 	part2
 # 	combined
-# End time: 17:04:27 on Nov 09,2016, Elapsed time: 0:00:00
+# End time: 16:25:02 on Nov 14,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 17:04:28 on Nov 09,2016, Elapsed time: 0:02:40
+# End time: 16:25:02 on Nov 14,2016, Elapsed time: 0:01:49
 # Errors: 0, Warnings: 0
-# vsim control 
-# Start time: 17:04:28 on Nov 09,2016
-# Loading work.control
-do control.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:05:32 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# -- Compiling module control
-# -- Compiling module combined
-# 
-# Top level modules:
-# 	part2
-# 	combined
-# End time: 17:05:33 on Nov 09,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 17:05:34 on Nov 09,2016, Elapsed time: 0:01:06
-# Errors: 0, Warnings: 0
-# vsim control 
-# Start time: 17:05:34 on Nov 09,2016
-# Loading work.control
-do combined.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:05:50 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# -- Compiling module control
-# -- Compiling module combined
-# 
-# Top level modules:
-# 	part2
-# 	combined
-# End time: 17:05:50 on Nov 09,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:05:51 on Nov 09,2016, Elapsed time: 0:00:17
-# Errors: 0, Warnings: 0
-# vsim combined 
-# Start time: 17:05:51 on Nov 09,2016
-# Loading work.combined
-# Loading work.control
-# Loading work.datapath
-do combined.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:13:16 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# ** Error: (vlog-13069) part2.v(103): near "input": syntax error, unexpected input, expecting ')'.
-# End time: 17:13:17 on Nov 09,2016, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./combined.do line 3
-# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -timescale 1ns/1ns part2.v"
-do combined.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:13:38 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# -- Compiling module control
-# ** Error: (vlog-13069) part2.v(213): near "=": syntax error, unexpected '=', expecting ++ or --.
-# -- Compiling module combined
-# End time: 17:13:38 on Nov 09,2016, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
-# Error in macro ./combined.do line 3
-# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
-#     while executing
-# "vlog -timescale 1ns/1ns part2.v"
-do combined.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:14:23 on Nov 09,2016
-# vlog -reportprogress 300 -timescale 1ns/1ns part2.v 
-# -- Compiling module part2
-# -- Compiling module datapath
-# -- Compiling module control
-# -- Compiling module combined
-# 
-# Top level modules:
-# 	part2
-# 	combined
-# End time: 17:14:24 on Nov 09,2016, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 17:14:25 on Nov 09,2016, Elapsed time: 0:08:34
-# Errors: 8, Warnings: 0
-# vsim combined 
-# Start time: 17:14:25 on Nov 09,2016
-# Loading work.combined
-# Loading work.control
+# vsim datapath 
+# Start time: 16:25:02 on Nov 14,2016
 # Loading work.datapath

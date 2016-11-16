@@ -17,10 +17,12 @@ force {coord} 2#1010101 0, 2#1111000 50
 
 force {ld_x} 0 0, 1 30, 0 40
 
-force {ld_y} 0 0, 1 50, 0 60
+force {ld_y} 0 0, 1 40, 0 60
 
 force {color_in} 2#101
 
-force {ld_color} 0 0, 1 30, 0 40
+force {ld_color} 0 0, 1 60, 0 80
 
-run 500 ns
+force {enable} 0 0, 1 100
+
+run 1000 ns

@@ -1,0 +1,190 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u17/c5/00/luyun5/final_project/airplane
+vcontrol
+Z1 !s110 1479175684
+!i10b 1
+!s100 4]jcWVMc?CR;h]Mc]S@6e3
+I68MRj]<P8lbZk7CW80X8k1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1479175478
+Z4 8airplane.v
+Z5 Fairplane.v
+L0 176
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1479175684.000000
+Z8 !s107 airplane.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|airplane.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+vcounter
+R1
+!i10b 1
+!s100 X@>X9VGe=EFd]=lZ7eW693
+IiB@@H95EkbP?bWKkA7@ch2
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vcounter_1
+!s110 1479109366
+!i10b 1
+!s100 X6KXP7[@1VM9]dR2iEK`c1
+I<VdWY1B5_>262fUh]?boI1
+R2
+R0
+w1479109363
+8airplane_try.v
+Fairplane_try.v
+Z11 L0 19
+R6
+r1
+!s85 0
+31
+!s108 1479109366.000000
+!s107 airplane_try.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|airplane_try.v|
+!i113 1
+R10
+vdatapath
+R1
+!i10b 1
+!s100 `A7ThE?CCT:@4YKDAZo2l1
+I57?C`KbI:[FG5@NKI=@FS3
+R2
+R0
+R3
+R4
+R5
+L0 156
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdatapath1
+R1
+!i10b 1
+!s100 H=Ti9@PiB<moUZkz5_Q^@1
+IKZ;UUU@YOCFL0^6X^faB70
+R2
+R0
+R3
+R4
+R5
+L0 123
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdelay_counter
+R1
+!i10b 1
+!s100 [QYZDBATbkk]2Z1i0f=z51
+IS8Bnie_OmU=?T`lE7=0T40
+R2
+R0
+R3
+R4
+R5
+L0 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vframe_counter
+R1
+!i10b 1
+!s100 k8_FO<S7A0]bh2=3LEh3e2
+Ik4V6P2]dR0i<zkFhh@AmF0
+R2
+R0
+R3
+R4
+R5
+L0 63
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vrate_counter
+R1
+!i10b 1
+!s100 Ni@_3Wh`e7m6i[m7=;:X10
+IOb:@DS@QHj4oDlQAn=o0<2
+R2
+R0
+R3
+R4
+R5
+R11
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vy_counter
+R1
+!i10b 1
+!s100 =R1f:2fJmB_G;RgR5z[bW2
+IBZmWe43<QD;I7`_zzX8bf1
+R2
+R0
+R3
+R4
+R5
+L0 84
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
