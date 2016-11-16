@@ -70,14 +70,14 @@ module datapath(clk, reset_n, enable, draw, x_in, y_in, color_in, ld_x, ld_y, ld
 	// x counter for square 4 * 4 plane
 	// threshold = 2'b11
 	// TODO: change x and y counter to shape
-	xy_counter cx(clk, enable, reset_n, x_count);
+	x_counter cx(clk, enable, reset_n, x_count);
 	
 	// assign y_enable = 1 when x goes through 1 row
 	assign y_enable = (x_count == 2'b11) ? 1 : 0;
 	
 	// y counter for square 4 * 4 plane
 	// TODO: change x and y counter to shape
-	xy_counter cy(clk, y_enable, reset_n, y_count);
+	y_counter cy(clk, y_enable, reset_n, y_count);
 	
 	
 	assign x_out = x + x_count;
@@ -88,7 +88,8 @@ endmodule
 
 
 
-module xy_counter(clk, enable, reset_n, out);
+// xy counter, count to the threshold to change row and shape
+module x_counter(clk, enable, reset_n, out);
 	input clk, enable, reset_n;
 	// could vary according to shape
 	output reg [1:0] out;
@@ -105,6 +106,44 @@ module xy_counter(clk, enable, reset_n, out);
 	end
 endmodule
 
+
+
+// y counter, count to the threshold to change column and shape
+module y_counter(clk, enable, reset_n, out);
+	input clk, enable, reset_n;
+	// could vary according to shape
+	output reg [1:0] out;
+	
+	always @(posedge clk) begin
+		if (!reset_n)
+			out <= 2'b0;
+		else if (enable) begin
+			if (out == 2'b11)
+				out <= 2'b0;
+			else
+				out <= out + 1'b1;
+		end
+	end
+endmodule
+
+
+
+// frame counter, count to 15 for every move so that the frame could refresh
+module frame_counter(clk, enable, reset_n, out);
+	input clk, enable, reset_n;
+	output reg [3:0] out;
+	
+	always @(posedge clk) begin
+		if (!reset_n)
+			out <= 4'b0;
+		else if (enable) begin
+			if (out == 4'b1111)
+				out <= 4'b0;
+			else
+				out <= out + 1'b1;
+		end
+	end
+endmodule
 
 
 
