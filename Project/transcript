@@ -1,1 +1,376 @@
-do airplane.do
+add wave -position insertpoint {{vlib work
+
+vlog -timescale 1ns/1ns part2.v
+
+vsim datapath
+
+log {/*}
+
+add wave {/*}}}
+ls
+# ProjectNotes.pages
+# Proposal form
+# airplane.do
+# airplane.do.bak
+# airplane.v
+# airplane.v.bak
+# airplaneLu
+# black.mif
+# datapath.do
+# datapath.do.bak
+# lab12_Verilog.pdf
+# project_advice.pdf
+# project_proposal_fall_2016.pdf
+# transcript
+# vga_adapter
+do datapath.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:32:31 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module airplane_top
+# ** Error: airplane.v(2): (vlog-2730) Undefined variable: 'CLOCK50'.
+# ** Error: airplane.v(2): Identifier must be declared with a port mode: CLOCK50.
+# ** Error: airplane.v(3): (vlog-2730) Undefined variable: 'VGA_CLK'.
+# ** Error: airplane.v(3): Identifier must be declared with a port mode: VGA_CLK.
+# ** Error: airplane.v(4): (vlog-2730) Undefined variable: 'VGA_HS'.
+# ** Error: airplane.v(4): Identifier must be declared with a port mode: VGA_HS.
+# ** Error: airplane.v(5): (vlog-2730) Undefined variable: 'VGA_VS'.
+# ** Error: airplane.v(5): Identifier must be declared with a port mode: VGA_VS.
+# ** Error: airplane.v(6): (vlog-2730) Undefined variable: 'VGA_BLANK_N'.
+# ** Error: airplane.v(6): Identifier must be declared with a port mode: VGA_BLANK_N.
+# ** Error: airplane.v(7): (vlog-2730) Undefined variable: 'VGA_SYNC_N'.
+# ** Error: airplane.v(7): Identifier must be declared with a port mode: VGA_SYNC_N.
+# ** Error: airplane.v(8): (vlog-2730) Undefined variable: 'VGA_R'.
+# ** Error: airplane.v(8): Identifier must be declared with a port mode: VGA_R.
+# ** Error: airplane.v(9): (vlog-2730) Undefined variable: 'VGA_G'.
+# ** Error: airplane.v(9): Identifier must be declared with a port mode: VGA_G.
+# ** Error: airplane.v(10): (vlog-2730) Undefined variable: 'VGA_B'.
+# ** Error: airplane.v(10): Identifier must be declared with a port mode: VGA_B.
+# -- Compiling module airplane
+# ** Error (suppressible): airplane.v(22): (vlog-13169) Packed dimension must specify a range.
+# ** Error: airplane.v(22): Dynamic net arrays are not allowed.
+# ** Error: (vlog-13069) airplane.v(26): near "endmodule": syntax error, unexpected endmodule, expecting ';' or ','.
+# ** Error: (vlog-13069) airplane.v(60): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: airplane.v(69): LHS in procedural continuous assignment may not be a net: y_enable.
+# ** Error: airplane.v(73): Checker 'counter' not found. Instantiation 'y' must be of a visible checker.
+# ** Error: airplane.v(76): LHS in procedural continuous assignment may not be a net: x_out.
+# ** Error: airplane.v(77): LHS in procedural continuous assignment may not be a net: y_out.
+# ** Error: airplane.v(78): LHS in procedural continuous assignment may not be a net: color_out.
+# ** Error: (vlog-13069) airplane.v(80): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: airplane.v(73): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: airplane.v(20): Identifier must be declared with a port mode: up.
+# ** Error: airplane.v(20): Identifier must be declared with a port mode: down.
+# End time: 14:32:31 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 31, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns airplane.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:32:55 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# ** Error: airplane.v(54): (vlog-2730) Undefined variable: 'ld_x'.
+# ** Error: airplane.v(56): (vlog-2730) Undefined variable: 'ld_y'.
+# ** Error: airplane.v(58): (vlog-2730) Undefined variable: 'ld_color'.
+# ** Error: (vlog-13069) airplane.v(60): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: airplane.v(69): LHS in procedural continuous assignment may not be a net: y_enable.
+# ** Error: airplane.v(73): Checker 'counter' not found. Instantiation 'y' must be of a visible checker.
+# ** Error: airplane.v(76): LHS in procedural continuous assignment may not be a net: x_out.
+# ** Error: airplane.v(77): LHS in procedural continuous assignment may not be a net: y_out.
+# ** Error: airplane.v(78): LHS in procedural continuous assignment may not be a net: color_out.
+# ** Error: (vlog-13069) airplane.v(80): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: airplane.v(73): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: airplane.v(31): Identifier must be declared with a port mode: ld_x.
+# ** Error: airplane.v(31): Identifier must be declared with a port mode: ld_y.
+# ** Error: airplane.v(31): Identifier must be declared with a port mode: ld_color.
+# End time: 14:32:55 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns airplane.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:34:17 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# ** Error: (vlog-13069) airplane.v(61): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: airplane.v(70): LHS in procedural continuous assignment may not be a net: y_enable.
+# ** Error: airplane.v(74): Checker 'counter' not found. Instantiation 'y' must be of a visible checker.
+# ** Error: airplane.v(77): LHS in procedural continuous assignment may not be a net: x_out.
+# ** Error: airplane.v(78): LHS in procedural continuous assignment may not be a net: y_out.
+# ** Error: airplane.v(79): LHS in procedural continuous assignment may not be a net: color_out.
+# ** Error: (vlog-13069) airplane.v(81): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: airplane.v(74): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# End time: 14:34:17 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns airplane.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:34:58 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# ** Error: airplane.v(67): 'x' already declared in this scope.
+# ** Error: airplane.v(74): 'y' already declared in this scope.
+# -- Compiling module counter
+# End time: 14:34:58 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./datapath.do line 3
+# /s/appspace/quartus-16.0.0.211/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -timescale 1ns/1ns airplane.v"
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:35:22 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:35:22 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 14:35:22 on Nov 16,2016
+# Loading work.datapath
+# Loading work.counter
+# ** Warning: (vsim-3015) airplane.v(67): [PCDPC] - Port size (25) does not match connection size (2) for port 'threshold'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/x_counter File: airplane.v
+# ** Error (suppressible): (vsim-3053) airplane.v(67): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/x_counter File: airplane.v
+# ** Warning: (vsim-3015) airplane.v(67): [PCDPC] - Port size (25) does not match connection size (9) for port 'out'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/x_counter File: airplane.v
+# ** Warning: (vsim-3015) airplane.v(74): [PCDPC] - Port size (25) does not match connection size (2) for port 'threshold'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/y_counter File: airplane.v
+# ** Error (suppressible): (vsim-3053) airplane.v(74): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/y_counter File: airplane.v
+# ** Warning: (vsim-3015) airplane.v(74): [PCDPC] - Port size (25) does not match connection size (8) for port 'out'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/y_counter File: airplane.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./datapath.do PAUSED at line 5
+ls
+# ProjectNotes.pages
+# Proposal form
+# airplane.do
+# airplane.do.bak
+# airplane.v
+# airplane.v.bak
+# airplaneLu
+# black.mif
+# datapath.do
+# datapath.do.bak
+# lab12_Verilog.pdf
+# project_advice.pdf
+# project_proposal_fall_2016.pdf
+# transcript
+# vga_adapter
+# work
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:36:11 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:36:12 on Nov 16,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 14:35:22 on Nov 16,2016
+# Loading work.datapath
+# Loading work.counter
+# ** Error (suppressible): (vsim-3053) airplane.v(67): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/x_counter File: airplane.v
+# ** Warning: (vsim-3015) airplane.v(67): [PCDPC] - Port size (25) does not match connection size (9) for port 'out'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/x_counter File: airplane.v
+# ** Error (suppressible): (vsim-3053) airplane.v(74): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/y_counter File: airplane.v
+# ** Warning: (vsim-3015) airplane.v(74): [PCDPC] - Port size (25) does not match connection size (8) for port 'out'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/y_counter File: airplane.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./datapath.do PAUSED at line 5
+ls
+# ProjectNotes.pages
+# Proposal form
+# airplane.do
+# airplane.do.bak
+# airplane.v
+# airplane.v.bak
+# airplaneLu
+# black.mif
+# datapath.do
+# datapath.do.bak
+# lab12_Verilog.pdf
+# project_advice.pdf
+# project_proposal_fall_2016.pdf
+# transcript
+# vga_adapter
+# work
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:40:35 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module xy_counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:40:35 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 14:35:22 on Nov 16,2016
+# Loading work.datapath
+# Loading work.xy_counter
+# ** Error (suppressible): (vsim-3053) airplane.v(67): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/cx File: airplane.v
+# ** Warning: (vsim-3015) airplane.v(67): [PCDPC] - Port size (2) does not match connection size (9) for port 'out'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/cx File: airplane.v
+# ** Error (suppressible): (vsim-3053) airplane.v(74): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/cy File: airplane.v
+# ** Warning: (vsim-3015) airplane.v(74): [PCDPC] - Port size (2) does not match connection size (8) for port 'out'. The port definition is at: airplane.v(85).
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/cy File: airplane.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./datapath.do PAUSED at line 5
+ls
+# ProjectNotes.pages
+# Proposal form
+# airplane.do
+# airplane.do.bak
+# airplane.v
+# airplane.v.bak
+# airplaneLu
+# black.mif
+# datapath.do
+# datapath.do.bak
+# lab12_Verilog.pdf
+# project_advice.pdf
+# project_proposal_fall_2016.pdf
+# transcript
+# vga_adapter
+# work
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:42:16 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module xy_counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:42:16 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 14:35:22 on Nov 16,2016
+# Loading work.datapath
+# Loading work.xy_counter
+# ** Error (suppressible): (vsim-3053) airplane.v(71): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/cx File: airplane.v
+# ** Error (suppressible): (vsim-3053) airplane.v(78): Illegal output or inout port connection for port 'out'.
+#    Time: 0 ns  Iteration: 0  Instance: /datapath/cy File: airplane.v
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./datapath.do PAUSED at line 5
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:43:53 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module xy_counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:43:54 on Nov 16,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 14:35:22 on Nov 16,2016
+# Loading work.datapath
+# Loading work.xy_counter
+# ** Error (suppressible): (vish-4008) Object 'coord' not found.
+# Error in macro ./datapath.do line 16
+# ** Error (suppressible): (vish-4008) Object 'coord' not found.
+# 
+#     while executing
+# "force {coord} 2#1010101 0, 2#1111000 50"
+pwd
+# /h/u5/c5/04/kongxi16/CSC258/Project
+pwd
+# /h/u5/c5/04/kongxi16/CSC258/Project
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:44:38 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module xy_counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:44:39 on Nov 16,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 14:44:39 on Nov 16,2016, Elapsed time: 0:09:17
+# Errors: 9, Warnings: 8
+# vsim datapath 
+# Start time: 14:44:39 on Nov 16,2016
+# Loading work.datapath
+# Loading work.xy_counter
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:45:14 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module xy_counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:45:14 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:45:15 on Nov 16,2016, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 14:45:15 on Nov 16,2016
+# Loading work.datapath
+# Loading work.xy_counter
+do datapath.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:45:35 on Nov 16,2016
+# vlog -reportprogress 300 -timescale 1ns/1ns airplane.v 
+# -- Compiling module datapath
+# -- Compiling module xy_counter
+# 
+# Top level modules:
+# 	datapath
+# End time: 14:45:35 on Nov 16,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:45:36 on Nov 16,2016, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0
+# vsim datapath 
+# Start time: 14:45:36 on Nov 16,2016
+# Loading work.datapath
+# Loading work.xy_counter
