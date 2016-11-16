@@ -19,7 +19,7 @@ module part2
 
 	input			CLOCK_50;				//	50 MHz
 	input   [9:0]   SW;  // SW[9:7] color(r,g,b), SW[6:0] input(x,y) note: 128*128 since x has 7 bits not 8, set msb to 0
-	input   [3:0]   KEY; // KEY[0] resetn, KEY[1] go, KEY[3] load
+	input   [3:0]   KEY; // KEY[0] resetn, KEY[1] draw, KEY[3] load
 
 	// Declare your inputs and outputs here
 	
@@ -41,7 +41,7 @@ module part2
 	wire [7:0] x;
 	wire [6:0] y;
 	wire writeEn;
-	wire ldx, ldy, ldc;
+	wire ldx, ldy, ldc, enable;
 
 	// Create an Instance of a VGA controller - there can be only one!
 	// Define the number of colours as well as the initial background
@@ -69,27 +69,37 @@ module part2
 			
 	// Put your code here. Your code should produce signals x,y,colour and writeEn/plot
 	// for the VGA controller, in addition to any other functionality your design may require.
+    
+	ratedivider r0(	.enable(enable),
+					.load(28'd24999999),
+					.clk(CLOCK_50),
+					.reset_n(resetn),
+					.q()); 
 	 
     // Instansiate datapath
 	datapath d0(	.clk(CLOCK_50),
-						.ld_x(ldx),
-						.ld_y(ldy),
-						.ld_color(ldc),
-						.reset_n(resetn),
-						.color_in(SW[9:7]),
-						.coord(SW[6:0]),
-						.x_out(x),
-						.y_out(y),
-						.color_out(colour));
-    // Instansiate FSM control
-	control c0(	.clk(CLOCK_50),
-					.reset_n(resetn),
-					.ld(KEY[3]),
-					.start(KEY[1]),
+					.enable(enable),
+	 
 					.ld_x(ldx),
 					.ld_y(ldy),
 					.ld_color(ldc),
-					.writeEn(writeEn));
+					.reset_n(resetn),
+					.color_in(SW[9:7]),
+					.coord(SW[6:0]),
+					.x_out(x),
+					.y_out(y),
+					.color_out(colour));
+
+    // Instansiate FSM control
+	control c0(	.clk(CLOCK_50),
+				.reset_n(resetn),
+				.ld(KEY[3]),
+				.start(KEY[1]),
+				.ld_x(ldx),
+				.ld_y(ldy),
+				.ld_color(ldc),
+				.writeEn(writeEn),
+				.enable(enable));
     
 endmodule
 
@@ -220,7 +230,10 @@ endmodule
 module control
 	(
 		input clk, reset_n, ld, start,
+<<<<<<< HEAD
+=======
 		
+>>>>>>> f9dc0eafa60e0bb36bd92c3fb435d51506f5b18b
 		output reg ld_x, ld_y, ld_color, writeEn, enable
 	);
 	
@@ -228,17 +241,17 @@ module control
 	
 	// States renaming
 	localparam 	Load_x = 3'd0,
-					Load_x_wait = 3'd1,
-					Load_y_color = 3'd2,
-					Load_y_color_wait = 3'd3,
-					Draw = 3'd4;
+				Load_x_wait = 3'd1,
+				Load_y_color = 3'd2,
+				Load_y_color_wait = 3'd3,
+				Draw = 3'd4;
 					
 	// State Table
 	always @(*) begin
 		case (current_state)
 			Load_x: next_state = ld ? Load_x_wait : Load_x;
 			Load_x_wait: next_state = ld ? Load_x_wait : Load_y_color;
-			Load_y_color: next_state = start ? Load_y_color : Load_y_color_wait;
+			Load_y_color: next_state = start ? Load_y_color : Load_y_color;
 			Load_y_color_wait: next_state = start ? Load_y_color_wait : Draw;
 			Draw: next_state = ld ? Load_x : Draw;
 		endcase
@@ -250,18 +263,21 @@ module control
 		ld_y = 1'b0;
 		ld_color = 1'b0;
 		writeEn = 1'b0;
-		enable = 1'b0;
 		
 		case (current_state)
 			Load_x: 
 				ld_x = 1;
+				enable = 1;
 			Load_x_wait: 
 				ld_x = 1;
+				enable = 1;
 			Load_y_color: begin
 				ld_y = 1; ld_color = 1;
+				enable = 1;
 			end
 			Load_y_color_wait: begin
 				ld_y = 1; ld_color = 1;
+				enable = 1;
 			end
 			Draw: begin
 				writeEn = 1; enable = 1;
