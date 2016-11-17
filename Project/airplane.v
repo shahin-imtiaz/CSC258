@@ -28,42 +28,48 @@
 //
 
 
-module datapath(clk, reset_n, enable, draw, x_in, y_in, color_in, ld_x, ld_y, ld_color, x_out, y_out, color_out);
+module datapath(clk, reset_n, enable, draw, color_in, ld_x, ld_y, ld_color, up, down x_out, y_out, color_out);
 	input clk, reset_n, enable, draw;
 	input ld_x, ld_y, ld_color;
-	input [8:0] x_in;
-	input [7:0] y_in;
-	input [2:0] color_in;
+	input up, down;
+
 	output [8:0] x_out;
 	output [7:0] y_out;
 	output [2:0] color_out;
 	
 	reg [8:0] x;
-	reg [7:0] y;
+	wire [7:0] y;
 	reg [2:0] color;
 	
 	// could vary according to shape
 	wire [1:0] y_count;
 	// could vary according to shape
 	wire [1:0] x_count;
-	
+	// where y starts
+	reg [7:0] y_start;
 	
 	wire y_enable;
 	
-	// register for x, y, color
+	// register for x, y_start, color
 	always @(posedge clk) begin
 		if (!reset_n) begin
 			x <= 9'b0;
-			y <= 8'b0;
+			y_start <= 8'b0;
 			color <= 3'b0;
 		end
 		else begin
 			if (ld_x)
-				x <= x_in;
+				x <= 9'd10;
 			if (ld_y)
-				y <= y_in;
-			if (ld_color)
-				color <= color_in;
+				y_start <= 8'd60;
+			if (ld_color) begin
+				if (!draw) begin
+					color <= 3'b000;
+				end
+				else begin
+					color <= 3'b111;
+				end
+			end
 		end
 	end
 	
@@ -79,9 +85,11 @@ module datapath(clk, reset_n, enable, draw, x_in, y_in, color_in, ld_x, ld_y, ld
 	// TODO: change x and y counter to shape
 	y_counter cy(clk, y_enable, reset_n, y_count);
 	
+
+	y_movement_counter y_move(clk, enable, reset_n, up, down, y);
 	
 	assign x_out = x + x_count;
-	assign y_out = y + y_count;
+	assign y_out = y_start + y + y_count;
 	assign color_out = color;
 	
 endmodule
@@ -127,6 +135,39 @@ module y_counter(clk, enable, reset_n, out);
 endmodule
 
 
+// y movement counter, count up when up signal, down when down signal
+module y_movement_counter(clk, enable, reset_n, up, down, out);
+	input clk, enable, reset_n, up, down;
+	input in, out;
+	output reg [7:0] q;
+
+	always @(posedge clk) begin
+		if (rst) begin
+			q <= 8'd60;
+		end
+		else if (enable) begin
+			if (up && ~down) begin
+				if (q == 8'd0) begin
+					q <= q;
+				end
+				else begin
+					q <= q - 1'b1;
+				end
+			end
+			else if (down && ~up) begin
+				if (q == 8'd114) begin
+					q <= q;
+				end
+				else begin
+					q <= q + 1'b1;
+				end
+			end
+			else begin
+				q <= q;
+			end
+		end
+	end
+endmodule
 
 // frame counter, count to 15 for every move so that the frame could refresh
 module frame_counter(clk, enable, reset_n, out);
@@ -147,7 +188,43 @@ endmodule
 
 
 
+module control(clk, reset_n, go, enable, ld_color, write_enable);
+	input clk, reset_n, go;
+	output enable, ld_color;
 
+	reg [1:0] current_state, next_state;
+
+	localparam 	LOAD = 2'b00,
+				LOAD_WAIT = 2'b01;
+				DRAW = 2'b10;
+
+	always @(*) begin
+		case (current_state)
+		LOAD: next_state = go ? LOAD_WAIT : LOAD;
+		LOAD_WAIT: next_state = go ? LOAD_WAIT : DRAW;
+		DRAW: next_state = DRAW;
+	end
+
+	always @(*) begin
+		enable = 1'b0;
+		ld_color = 1'b0;
+		case (current_state)
+			DRAW: begin
+				enable = 1'b1;
+				ld_color = 1'b1;
+			end
+		endcase
+	end
+
+	always @(posedge clk) begin
+		if (!reset_n) begin
+			current_state <= LOAD;
+		end
+		else begin
+			current_state <= next_state;
+		end
+	end
+endmodule
 
 
 
